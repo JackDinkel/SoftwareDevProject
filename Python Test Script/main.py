@@ -120,8 +120,9 @@ def old():
 	print "You have had your phone for %d months" % i
 	return i
 
-def condition():
-	i = raw_input("Is your phone used? (y)es or (n)o. ")
+def condition(i=0):
+	if not i:
+		i = raw_input("Is your phone used? (y)es or (n)o. ")
 	if i == "y":
 		print "Your phone is used."
 		return True
@@ -129,15 +130,8 @@ def condition():
 		print "Your phone is new."
 		return False
 
-
-
-
-def main():
-	#build phone dictionary using file "phone_dictionary"
+def build_phoneDic():
 	phoneDic = {}
-	carrierDic = {}
-	carrierCoefficient = 0
-
 	f = open("phone_dictionary")
 	for line in f.readlines():
 		if line[0] != '#' and line.isspace() != True:
@@ -147,7 +141,10 @@ def main():
 			price = line[1]
 			price = price.strip()
 			phoneDic[phone] = float(price)
+	return phoneDic
 
+def build_carrierDic():
+	carrierDic = {}
 	c = open("carrier")
 	for line in c.readlines():
 		if line[0] != '#' and line.isspace() != True:
@@ -157,15 +154,26 @@ def main():
 			constant = line[1]
 			constant = constant.strip()
 			carrierDic[carrier] = float(constant)
+	return carrierDic
+
+def main():
+	#build phone dictionary using file "phone_dictionary"
+	phoneDic = build_phoneDic()
+
+	#build carrier dictionary using file "carrier"
+	carrierDic = build_carrierDic()
 	
+	#ask the user their phone and carrier
 	currentPhone = findPhone(phoneDic.keys())
 	currentCarrier = findCarrier(carrierDic.keys())
 
+	#calculate the coefficient based off the carrier
 	carrierCoefficient = carrierDic[currentCarrier]
 
 	#set to initial value
 	phoneWorth = phoneDic[currentPhone]
 
+	#decrement phoneworth based on the carrier coefficient
 	phoneWorth = phoneWorth * carrierCoefficient
 
 	contract() #ensure phone is not under contract
@@ -235,4 +243,5 @@ def main():
 
 	print "Your phone is worth $%s" % round(phoneWorth, 2)
 
-main()
+if __name__ == '__main__':
+	main()
