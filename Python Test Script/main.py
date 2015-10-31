@@ -1,6 +1,6 @@
 import sys
 
-def findPhone(phoneList):
+def findPhone(phoneList, i=0):
 	'''
 		uses phones in phoneDic to ask the user which phone they have
 		takes the list of phones(phoneDic.keys()) as input
@@ -10,13 +10,14 @@ def findPhone(phoneList):
 	for phone in phoneList:
 		print "%d. %s" % (x, phone)
 		x += 1
-	i = int(input("Please enter the number corresponding to the phone you have. "))
+	if not i:
+		i = int(input("Please enter the number corresponding to the phone you have. "))
 	currentPhone = phoneList[i-1]
 	print "You currently own the", currentPhone
 
 	return currentPhone
 
-def findCarrier(carrierList):
+def findCarrier(carrierList, i=0):
 	'''
 		uses carriers in carrierDic to ask the user which carrier they have
 		takes the list of carriers(carrierDic.keys()) as input
@@ -27,15 +28,17 @@ def findCarrier(carrierList):
 	for carrier in carrierList:
 		print "%d. %s" % (x, carrier)
 		x += 1
-	i = int(input("Please enter the number corresponding to the carrier you have. "))
+	if not i:
+		i = int(input("Please enter the number corresponding to the carrier you have. "))
 	currentCarrier = carrierList[i-1]
 	print "Your carrier is ", currentCarrier
 
 	return currentCarrier
 
 
-def power():
-	i = raw_input("Does your phone turn on? (y)es or (n)o. ")
+def power(i=0):
+	if not i:
+		i = raw_input("Does your phone turn on? (y)es or (n)o. ")
 	if i == "y":
 		print "Your phone turns on."
 		return True
@@ -44,8 +47,9 @@ def power():
 		return False
 
 
-def screenDamage():
-	i = int(raw_input("From 1-3, please rate the condition of your screen, 3 being flawless, 2 being scratched, 1 being cracked: "))
+def screenDamage(i=0):
+	if not i:
+		i = int(raw_input("From 1-3, please rate the condition of your screen, 3 being flawless, 2 being scratched, 1 being cracked: "))
 	if i == 1:
 		print "Your screen is cracked."
 	elif i == 2:
@@ -54,8 +58,9 @@ def screenDamage():
 		print "Your screen is flawless."
 	return i
 
-def waterDamage():
-	i = raw_input("Does your phone have water damage? (y)es or (n)o. ")
+def waterDamage(i=0):
+	if not i:
+		i = raw_input("Does your phone have water damage? (y)es or (n)o. ")
 	if i == "y":
 		print "Your phone has water damage."
 		return True
@@ -63,13 +68,15 @@ def waterDamage():
 		print "Your phone has no water damage."
 		return False
 
-def buttons():
-	i = int(raw_input("How many broken buttons does your phone have? "))
+def buttons(i=0):
+	if not i:
+		i = int(raw_input("How many broken buttons does your phone have? "))
 	print "You have %d broken buttons" % i
 	return i
 
-def birds():
-	i = raw_input("Does your phone have Angry Birds? (y)es or (n)o. ")
+def birds(i=0):
+	if not i:
+		i = raw_input("Does your phone have Angry Birds? (y)es or (n)o. ")
 	if i == "y":
 		print "Your phone has Angry Birds."
 		return True
@@ -77,16 +84,18 @@ def birds():
 		print "Your phone does not have Angry Birds."
 		return False
 
-def contract():
-	i = raw_input("Is this phone under contract? (y)es or (n)o. ")
+def contract(i=0):
+	if not i:
+		i = raw_input("Is this phone under contract? (y)es or (n)o. ")
 	if i == "y":
 		print "We cannot purchase your phone at this time."
 		sys.exit()
 	else:
 		print "Your phone is not under contract."
 
-def insurance():
-	i = raw_input("Is your phone covered by insurance? (y)es or (n)o. ")
+def insurance(i=0):
+	if not i:
+		i = raw_input("Is your phone covered by insurance? (y)es or (n)o. ")
 	if i == "y":
 		print "Your phone is covered."
 		return True
@@ -94,8 +103,9 @@ def insurance():
 		print "Your phone is not covered."
 		return False
 
-def frame():
-	i = int(raw_input("From 1-4, please rate the condition of your frame, 4 being flawless, 3 being slightly damaged, 2 being moderately damaged, 1 being severly damaged: "))
+def frame(i=0):
+	if not i:
+		i = int(raw_input("From 1-4, please rate the condition of your frame, 4 being flawless, 3 being slightly damaged, 2 being moderately damaged, 1 being severly damaged: "))
 	if i == 1:
 		print "Your screen is severely damaged."
 	elif i == 2:
@@ -106,8 +116,9 @@ def frame():
 		print "Your screen is flawless"
 	return i
 
-def box():
-	i = raw_input("Do you have the original box for your phone? (y)es or (n)o. ")
+def box(i=0):
+	if not i:
+		i = raw_input("Do you have the original box for your phone? (y)es or (n)o. ")
 	if i == "y":
 		print "You have the original box."
 		return True
@@ -115,8 +126,9 @@ def box():
 		print "You do not have the original box."
 		return False
 
-def old():
-	i = int(raw_input("How many months have you had your phone? "))
+def old(i=0):
+	if not i:
+		i = int(raw_input("How many months have you had your phone? "))
 	print "You have had your phone for %d months" % i
 	return i
 
