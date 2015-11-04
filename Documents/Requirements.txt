@@ -1,0 +1,4 @@
+Python 2.7
+Python:
+	requests
+	beautifulsoup4
