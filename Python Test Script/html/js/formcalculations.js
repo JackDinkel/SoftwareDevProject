@@ -133,6 +133,12 @@ function insciptionPrice()
 
 }*/
 
+var buttonList = ["contract", "used", "insurance", "power", "water", "box"]
+
+var yes_no_list = new Array();
+    yes_no_list["yes"] = 1;
+    yes_no_list["no"] = 0;
+
 function manufacturer()
 {
     var manufacturer_coefficient = 1;
@@ -140,9 +146,9 @@ function manufacturer()
     //build an array with the values
     var manufacturerList = new Array();
     manufacturerList["Samsung"]=1;
-    manufacturerList["LG"]=2;
-    manufacturerList["HTC"]=3;
-    manufacturerList["Apple"]=4;
+    manufacturerList["LG"]=1;
+    manufacturerList["HTC"]=1;
+    manufacturerList["Apple"]=1;
 
     var form = document.forms["form"];
     var manufacturer = form.elements["manufacturer"];
@@ -163,6 +169,24 @@ function manufacturer()
     return manufacturer_coefficient;
 }
 
+function readbuttons(buttontype, list)
+{
+    var coefficient = 1;
+
+    var form = document.forms["form"];
+    var buttonList = form.elements[buttontype];
+
+    for (var i = 0; i < buttonList.length; i++)
+    {
+        if(buttonList[i].checked)
+        {
+            coefficient = list[buttonList[i].value];
+            break;
+        }
+    }
+    return coefficient;
+}
+
 function hideTotal()
 {
     var divobj = document.getElementById('totalPrice');
@@ -171,8 +195,15 @@ function hideTotal()
 
 function calculateTotal()
 {
+    var totalprice = manufacturer();
+
+    for (var i = 0; i < buttonList.length; i++)
+    {
+        totalprice *= readbuttons(buttonList[i], yes_no_list)
+    }
+
     var divobj = document.getElementById('totalPrice');
     divobj.style.display='block';
-    divobj.innerHTML = "Total Price For the Cake $" + manufacturer();
+    divobj.innerHTML = "Total Price For the Cake $" + totalprice;
 }
 
