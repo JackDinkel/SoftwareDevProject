@@ -12,8 +12,13 @@ class Tester(unittest.TestCase):
 	def test_condition3(self):
 		self.assertEqual(main.condition("ynfj49 d"), False, "The condition test failed on 'ynfj49 d'")
 
-	def test_old(self):
+	def test_old1(self):
 		self.assertEqual(main.old(23), 23, "The old test failed on 23")
+	def test_old2(self):
+		self.assertEqual(main.old(2), 2, "The old test failed on 2")
+	def test_old3(self):
+		self.assertEqual(main.old(10), 10, "The old test failed on 10")
+
 
 	def test_box1(self):
 		self.assertEqual(main.box("y"), True, "The box test failed on 'y'")
