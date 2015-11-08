@@ -40,8 +40,8 @@ You are free to use the code in Commercial or non-commercial projects
 function getCakeSizePrice()
 {  
     var cakeSizePrice=0;
-    //Get a reference to the form id="cakeform"
-    var theForm = document.forms["cakeform"];
+    //Get a reference to the form id="form"
+    var theForm = document.forms["form"];
     //Get a reference to the cake the user Chooses name=selectedCake":
     var selectedCake = theForm.elements["selectedcake"];
     //Here since there are 4 radio buttons selectedCake.length = 4
@@ -71,8 +71,8 @@ function getCakeSizePrice()
 function getFillingPrice()
 {
     var cakeFillingPrice=0;
-    //Get a reference to the form id="cakeform"
-    var theForm = document.forms["cakeform"];
+    //Get a reference to the form id="form"
+    var theForm = document.forms["form"];
     //Get a reference to the select id="filling"
      var selectedFilling = theForm.elements["filling"];
      
@@ -88,8 +88,8 @@ function getFillingPrice()
 function candlesPrice()
 {
     var candlePrice=0;
-    //Get a reference to the form id="cakeform"
-    var theForm = document.forms["cakeform"];
+    //Get a reference to the form id="form"
+    var theForm = document.forms["form"];
     //Get a reference to the checkbox id="includecandles"
     var includeCandles = theForm.elements["includecandles"];
 
@@ -108,8 +108,8 @@ function insciptionPrice()
     //If the user checked the box this value will be 20
     //otherwise it will remain at 0
     var inscriptionPrice=0;
-    //Get a refernce to the form id="cakeform"
-    var theForm = document.forms["cakeform"];
+    //Get a refernce to the form id="form"
+    var theForm = document.forms["form"];
     //Get a reference to the checkbox id="includeinscription"
     var includeInscription = theForm.elements["includeinscription"];
     //If they checked the box set inscriptionPrice to 20
@@ -120,17 +120,47 @@ function insciptionPrice()
     return inscriptionPrice;
 }
         
-function calculateTotal()
+/*function calculateTotal()
 {
     //Here we get the total price by calling our function
     //Each function returns a number so by calling them we add the values they return together
-    var cakePrice = getCakeSizePrice() + getFillingPrice() + candlesPrice() + insciptionPrice();
+    //var cakePrice = getCakeSizePrice() + getFillingPrice() + candlesPrice() + insciptionPrice();
     
     //display the result
     var divobj = document.getElementById('totalPrice');
     divobj.style.display='block';
-    divobj.innerHTML = "Total Price For the Cake $"+cakePrice;
+    divobj.innerHTML = "Total Price For the Cake $10";
 
+}*/
+
+function manufacturer()
+{
+    var manufacturer_coefficient = 1;
+
+    //build an array with the values
+    var manufacturerList = new Array();
+    manufacturerList["Samsung"]=1;
+    manufacturerList["LG"]=2;
+    manufacturerList["HTC"]=3;
+    manufacturerList["Apple"]=4;
+
+    var form = document.forms["form"];
+    var manufacturer = form.elements["manufacturer"];
+
+    //loop through the buttons
+    for(var i = 0; i < manufacturer.length; i++)
+    {
+        //if the radio button is checked
+        if(manufacturer[i].checked)
+        {
+            //retrieve the value from the array
+            manufacturer_coefficient = manufacturerList[manufacturer[i].value];
+            //if there is a match, break, since only one button can be checked
+            break;
+        }
+    }
+    //return the value
+    return manufacturer_coefficient;
 }
 
 function hideTotal()
@@ -138,3 +168,11 @@ function hideTotal()
     var divobj = document.getElementById('totalPrice');
     divobj.style.display='none';
 }
+
+function calculateTotal()
+{
+    var divobj = document.getElementById('totalPrice');
+    divobj.style.display='block';
+    divobj.innerHTML = "Total Price For the Cake $" + manufacturer();
+}
+
