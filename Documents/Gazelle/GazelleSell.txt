@@ -1,0 +1,22 @@
+https://www.gazelle.com/
+	iphone
+		iphone-6-plus
+		iphone-6
+		iphone-5s
+		iphone-5c
+		iphone-5
+		iphone-4s
+		iphone-4
+			at-t
+			sprint
+			t-mobile
+			verizon
+			unlocked
+			other
+				iphone-<model>-<capacity>-<carrier>
+					<item id is unique.>-gpid <<<item id appears to be iterative across capacity, carrier, and model. Need to verify what the hierarchy is for the iteration/incrementation of the item id.
+
+
+This is what appears to be the hierarchy for the url formulation for Gazelle :DDDDDDD
+
+https://www.gazelle.com/<buy or sell>/<category>/<sub category>/<carrier>/<specific model>-<carrier>/<*unique id>-gpid
