@@ -23,9 +23,13 @@ nav{
 header{
 
 }
+ 
+footer{
+	text-align: left;
+}
 
 a{
-
+	text-decoration: none;
 }
 
 a.button {
