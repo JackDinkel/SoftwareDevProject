@@ -1,3 +1,4 @@
+SELLING
 https://www.gazelle.com/
 	iphone
 		iphone-6-plus
@@ -20,3 +21,9 @@ https://www.gazelle.com/
 This is what appears to be the hierarchy for the url formulation for Gazelle :DDDDDDD
 
 https://www.gazelle.com/<buy or sell>/<category>/<sub category>/<carrier>/<specific model>-<carrier>/<*unique id>-gpid
+
+
+-----------------------------------------------------------
+BUYING
+http://buy.gazelle.com/buy/used/iphone-4s-16gb-at-t
+http://buy.gazelle.com/buy/used/<model>-<capacity>-<carrier>
