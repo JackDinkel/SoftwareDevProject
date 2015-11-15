@@ -8,7 +8,7 @@
 
         <body class="container">
 	<div class="sectionTop">
-                <header >
+                <header class="floatLeft">
                         <h1>Buy and sell your devices!</h1>
                 </header>
 
