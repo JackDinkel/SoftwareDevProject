@@ -1,0 +1,1259 @@
+<!DOCTYPE doctype html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" xmlns="http://www.w3.org/1999/xhtml"  xml:lang="en" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" xmlns="http://www.w3.org/1999/xhtml"  xml:lang="en" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" xmlns="http://www.w3.org/1999/xhtml"  xml:lang="en" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="beautiful no-js" lang="en" xml:lang="en"> <!--<![endif]-->
+<head>
+<meta content="authenticity_token" name="csrf-param"/>
+<meta content="dxGuzihOkQ7Xjf42erINCB112kKmstrAEb+BE09AjiQ=" name="csrf-token"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"3d39f317e2","applicationID":"1054176","transactionName":"el4KFkdaCFlQQR1FFlZVEQFBRktGXVxF","queueTime":0,"applicationTime":608,"agentToken":null,"agent":"js-agent.newrelic.com/nr-768.min.js","ttGuid":"a30186b2a67dd23e"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-768.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+<title>Sell or Trade in Your Apple iPhone 6s Plus 16GB (AT&amp;T) | Gazelle</title>
+<!-- version: r3 -->
+<!-- Host:prod-g3-5c -->
+<script type="text/javascript">
+  window.console = window.console || {log: function(){}};
+
+  function setExpirationBucket(bucket, applyToOptions){
+    var $ = window.optimizely.$;
+    window.expirationBuckets = window.expirationBuckets || {};
+    var bucketsKey = applyToOptions["type"] + ":" + applyToOptions["id"]
+    window.expirationBuckets[bucketsKey] = bucket;
+  }
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+
+  var hostName = window.location.hostname;
+  var pathToRefer = hostName.substr(hostName.indexOf("."));
+
+  _gaq.push(['_setAccount', 'UA-1586425-58']);
+  _gaq.push(['_addIgnoredRef', pathToRefer]);
+  _gaq.push(['_setDomainName', pathToRefer]);
+
+</script>
+<script src="//cdn.optimizely.com/js/127283929.js"></script>
+<script type="text/javascript">
+    (function() {
+      function getParameterByName(name) {
+        var name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
+        var results = regex.exec(location.search);
+        return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " ")).replace(/^\s+|\s+$/g, '');
+      }
+
+      var referrer_url = getParameterByName('referrer');
+      if (referrer_url.length > 0) {
+        _gaq.push(['_setReferrerOverride', referrer_url]);
+      }
+
+      _gaq.push(['_trackPageview']);
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+<script src="https://tags.extole.com/913653/core.js"></script>
+<meta content="Find out how much your Apple iPhone 6s Plus 16GB (AT&amp;T) is worth. Gazelle makes it easy to sell your used iPhones, iPads, Apple products and other smartphones. Free shipping and fast payment.
+" name="description"/>
+<meta content="sell Apple iPhone 6s Plus 16GB (AT&amp;T), Apple iPhone 6s Plus 16GB (AT&amp;T) recycling, recycle Apple iPhone 6s Plus 16GB (AT&amp;T), Apple iPhone 6s Plus 16GB (AT&amp;T) trade in, cash for Apple iPhone 6s Plus 16GB (AT&amp;T), recommerce, re-commerce, gazelle, gazelle.com, sell used Apple iPhone 6s Plus 16GB (AT&amp;T), recycle used Apple iPhone 6s Plus 16GB (AT&amp;T), sell old Apple iPhone 6s Plus 16GB (AT&amp;T), recycle old Apple iPhone 6s Plus 16GB (AT&amp;T)
+" name="keywords"/>
+<link href="https://m.gazelle.com/iphone/iphone-6s-plus/at-t/iphone-6s-plus-16gb-at-t/496033-gpid" rel="alternate">
+<link href="/favicon.ico" rel="icon" type="image/png"/>
+<link href="/favicon.ico" rel="SHORTCUT ICON"/>
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="/touch-icon-iphone.png" rel="apple-touch-icon"/>
+<link href="/touch-icon-ipad.png" rel="apple-touch-icon" sizes="72x72"/>
+<link href="/touch-icon-iphone-retina.png" rel="apple-touch-icon" sizes="114x114"/>
+<link href="/touch-icon-ipad-retina.png" rel="apple-touch-icon" sizes="144x144"/>
+<!-- Gigya - BEG -->
+<script src="https://cdns.gigya.com/js/gigya.js?apiKey=3_0pyl6VQlG_qHn63TcWEr_eOCWh1jlqhqPzroivKYPFKfJhavhs4Yhd3NGQs1kMUU" type="text/javascript">
+{
+  siteName: 'Gazelle Production Site (Desktop)'
+  ,enabledProviders: 'facebook,google,linkedin,yahoo,messenger'
+}
+</script>
+<!-- Gigya - END -->
+<link href="//m0-beta.gazelle.com/assets/new_calculator-dc24d5c0824f64e41fd9aa7bcd5548f8.css" media="screen" rel="stylesheet" type="text/css"/>
+<script src="//m1-beta.gazelle.com/assets/vendor/modernizr-2.6.2-respond-1.1.0.min-245b59cfb6f2cfc8c8f396b54605f488.js" type="text/javascript"></script> <script type="text/javascript">
+document.write(unescape('%3Cscript src="' + document.location.protocol + '//s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4f7dc2f115141679" type="text/javascript"%3E %3C/script%3E'));
+</script>
+<script type="text/javascript">
+  (function(r){_ready={q:function(){return r;}};$=function(f){if(typeof f==="function"){r.push(arguments);}return $;};jQuery=$.ready=$;}([]));
+</script>
+</link></link></meta></head>
+<body>
+<div id="imeiLightBoxScreen"></div>
+<div id="imeiLightBox">
+<script> var wit_url = 'https://g3-gz-wit.herokuapp.com/status/tmobile/'; </script>
+<div class="imei_check" id="offerImeiTwo">
+<span id="imeiLightBoxClose">×</span>
+<div class="imei_check_request">
+<p class="showResetImei"><span class="a">You must have fully paid for your phone to sell it.</span></p>
+<p class="showResetImei"><span class="a">Let's check that it's good to go...</span></p>
+<div class="imei_check_response hideResetImei">
+<table class="imei_status">
+<tr>
+<td id="message_part_1">
+<span class="msg" id="setCallCarrierStatusMessageOne"><b>We could not determine status of your account<br>at this time.</br></b></span>
+<span class="msg" id="setClearStatusMessageOne"><b>Great! You have no outstanding financing commitment<br>with T-Mobile.</br></b></span>
+<span class="msg" id="setActiveContractStatusMessageOne"><b>This phone is subject to an annual contract term.</b><br>Please call T-Mobile to settle your account before<br>sending it to us.</br></br></span>
+<span class="msg" id="setActiveBlockedStatusMessageOne"><b>This phone has been locked by T-Mobile.</b><br>Please call T-Mobile to settle your account before<br>sending your phone.</br></br></span>
+<span class="msg" id="setFinancedStatusMessageOne"><b>You still have payments due on your financed phone.</b><br>You must pay T-Mobile in full before sending it to us.</br></span>
+<span class="msg" id="setStolenStatusMessageOne"><b>Our records show that this device has been<br>reported lost or stolen.</br></b><br>Please call T-Mobile if you believe this to be in error.</br></span>
+<div class="msg" id="setInvalidStatusMessageOne">Invalid IMEI. Please try again.</div>
+</td>
+</tr>
+<tr>
+<td id="message_part_2">
+<span class="msg" id="setCallCarrierStatusMessageTwo">Click "Continue" to sell your phone and we will check with T-Mobile again when we receive it.</span>
+<span class="msg" id="setClearStatusMessageTwo"></span>
+<span class="msg" id="setActiveContractStatusMessageTwo">Unsettled accounts can cause a reduction in trade-in value.</span>
+<span class="msg" id="setActiveBlockedStatusMessageTwo">Unsettled accounts can cause a reduction in trade-in value.</span>
+<span class="msg" id="setFinancedStatusMessageTwo">Phones that are not paid off in full have $0 trade-in value.</span>
+<span class="msg" id="setStolenStatusMessageTwo">Phones reported lost or stolen have $0 trade-in value.</span>
+<span class="msg" id="setInvalidStatusMessageTwo"></span>
+</td>
+</tr>
+</table>
+</div>
+<div id="imei_check_partial">
+<div class="imei_check_form">
+<input class="showResetImei" id="imei_input_field" name="imei_input_field" placeholder="Enter the IMEI Number" type="text"/>
+<div class="how_to_find_imei showResetImei">
+<table id="part_2">
+<tr>
+<td id="findImeiText">To find your IMEI, dial</td>
+<td><div class="number_to_dial">*</div></td>
+<td><div class="number_to_dial">#</div></td>
+<td><div class="number_to_dial">0</div></td>
+<td><div class="number_to_dial">6</div></td>
+<td><div class="number_to_dial">#</div></td>
+</tr>
+</table>
+</div>
+<img alt="Activity_indicator" id="activity_indicator_gif" src="//m3-beta.gazelle.com/assets/activity_indicator-5f9ee5dfd0a5d36dedd0980496f77c22.gif"/>
+<button class="showResetImei" id="submit_imei_check" name="button" type="button">Check IMEI</button>
+<button class="hideResetImei" id="imeiCloseLightBoxBtn" name="button" type="button">Close</button>
+<button class="hideResetImei" id="imeiContinueLightBoxBtn" name="button" type="button">Continue</button>
+<div class="hideResetImei" id="imeiOrDiv">OR</div>
+<a class="hideResetImei" href="#" id="iKnowMyFateLinkImei">I will settle my account before sending the phone in</a>
+<br>
+</br></div>
+</div>
+</div>
+</div>
+<script> var wit_url = 'https://g3-gz-wit.herokuapp.com/status/tmobile/'; </script>
+<div class="imei_check" id="offerImeiThree">
+<span id="imeiLightBoxClose">×</span>
+<div class="imei_check_request">
+<p class="showResetImei"><span class="a">You must have fully paid for your phone to sell it.</span></p>
+<p class="showResetImei"><span class="a">Let's check that it's good to go...</span></p>
+<div class="imei_check_response hideResetImei">
+<table class="imei_status">
+<tr>
+<td id="message_part_1">
+<span class="msg" id="setCallCarrierStatusMessageOne"><b>We could not determine status of your account<br>at this time.</br></b></span>
+<span class="msg" id="setClearStatusMessageOne"><b>Great! You have no outstanding financing commitment<br>with T-Mobile.</br></b></span>
+<span class="msg" id="setActiveContractStatusMessageOne"><b>This phone is subject to an annual contract term.</b><br>Please call T-Mobile to settle your account before<br>sending it to us.</br></br></span>
+<span class="msg" id="setActiveBlockedStatusMessageOne"><b>This phone has been locked by T-Mobile.</b><br>Please call T-Mobile to settle your account before<br>sending your phone.</br></br></span>
+<span class="msg" id="setFinancedStatusMessageOne"><b>You still have payments due on your financed phone.</b><br>You must pay T-Mobile in full before sending it to us.</br></span>
+<span class="msg" id="setStolenStatusMessageOne"><b>Our records show that this device has been<br>reported lost or stolen.</br></b><br>Please call T-Mobile if you believe this to be in error.</br></span>
+<div class="msg" id="setInvalidStatusMessageOne">Invalid IMEI. Please try again.</div>
+</td>
+</tr>
+<tr>
+<td id="message_part_2">
+<span class="msg" id="setCallCarrierStatusMessageTwo">Click "Continue" to sell your phone and we will check with T-Mobile again when we receive it.</span>
+<span class="msg" id="setClearStatusMessageTwo"></span>
+<span class="msg" id="setActiveContractStatusMessageTwo">Unsettled accounts can cause a reduction in trade-in value.</span>
+<span class="msg" id="setActiveBlockedStatusMessageTwo">Unsettled accounts can cause a reduction in trade-in value.</span>
+<span class="msg" id="setFinancedStatusMessageTwo">Phones that are not paid off in full have $0 trade-in value.</span>
+<span class="msg" id="setStolenStatusMessageTwo">Phones reported lost or stolen have $0 trade-in value.</span>
+<span class="msg" id="setInvalidStatusMessageTwo"></span>
+</td>
+</tr>
+</table>
+</div>
+<div id="imei_check_partial">
+<div class="imei_check_form">
+<input class="showResetImei" id="imei_input_field" name="imei_input_field" placeholder="Enter the IMEI Number" type="text"/>
+<div class="how_to_find_imei showResetImei">
+<table id="part_2">
+<tr>
+<td id="findImeiText">To find your IMEI, dial</td>
+<td><div class="number_to_dial">*</div></td>
+<td><div class="number_to_dial">#</div></td>
+<td><div class="number_to_dial">0</div></td>
+<td><div class="number_to_dial">6</div></td>
+<td><div class="number_to_dial">#</div></td>
+</tr>
+</table>
+</div>
+<img alt="Activity_indicator" id="activity_indicator_gif" src="//m2-beta.gazelle.com/assets/activity_indicator-5f9ee5dfd0a5d36dedd0980496f77c22.gif"/>
+<button class="showResetImei" id="submit_imei_check" name="button" type="button">Check IMEI</button>
+<button class="hideResetImei" id="imeiCloseLightBoxBtn" name="button" type="button">Close</button>
+<button class="hideResetImei" id="imeiContinueLightBoxBtn" name="button" type="button">Continue</button>
+<div class="hideResetImei" id="imeiOrDiv">OR</div>
+<a class="hideResetImei" href="#" id="iKnowMyFateLinkImei">I will settle my account before sending the phone in</a>
+<br>
+</br></div>
+</div>
+</div>
+</div>
+</div>
+<div id="shadowOfTheColosus"></div>
+<div id="theColosus">
+<b id="boldOfTheColsus">
+    Get $20 credit toward a device purchase
+  </b>
+<br><br>
+<span id="spanofTheColosus">When you trade-in through Gazelle, you get a $20 credit to purchase on <a href="https://buy.gazelle.com/" target="_blank">our store</a>.</span>
+<p class="paragraphsOfTheColosus">Put it towards a phone, iPad, an accessory - anything you like.</p><br><br>
+<p class="paragraphsOfTheColosus">After we receive your trade-in you will get an email with a link you can use for the purchase. It's good for 7 days.</p>
+<button id="destroyTheColosus">Close</button>
+</br></br></br></br></div>
+<noscript>
+<div id="no_script_warning">JavaScript is disabled in your browser.  See <a href="http://www.google.com/support/bin/answer.py?answer=23852">here</a> to learn how to enable JavaScript.</div>
+</noscript>
+<div id="cookie_prefix" style="display:none">g3_</div>
+<div class="wrapper">
+<div id="above_footer_wrapper">
+<div id="header_container">
+<div class="header__container">
+<header>
+<div id="login_form_container" style="display: none">
+<form accept-charset="UTF-8" action="https://www.gazelle.com/omnilogin/login" class="new_user" id="new_user" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"/></div>
+<div class="gigya_area">
+<p>Login quickly and securely using your preferred social network account.</p>
+<script type="text/javascript">
+      var login_params=
+      {
+        showTermsLink: 'false'
+        ,height: 45
+        ,width: 200
+        ,containerID: 'componentDiv'
+        ,autoDetectUserProviders: ''
+        ,facepilePosition: 'none'
+        ,redirectURL: 'http://www.gazelle.com/omnilogin/gigya_login'
+      }
+    </script>
+<div class="gigya" id="componentDiv"></div>
+<script type="text/javascript">
+       if (typeof(gigya) != "undefined" && (typeof(gigya.socialize) != "undefined")) {
+         gigya.socialize.showLoginUI(login_params);
+       }
+    </script>
+</div>
+<div class="or_banner">
+<img alt="Horizontal_divider" height="28" src="//m1-beta.gazelle.com/assets/shared/horizontal_divider-20ee577baa58065ba2a9ceb3e7352135.jpg" width="220"/>
+</div>
+<div>
+<label for="email">Enter your email address</label>
+<input id="email" name="email" type="text"/>
+<label for="password">Password<a class="intra_omnilogin_link inline forgot" href="/password_reset_requests/new">Forgot your password?</a></label>
+<input class="text_field" id="password" name="password" type="password" value=""/>
+<a class="intra_omnilogin_link" href="/create-account">Create an Account</a>
+<input class="orange_button" name="commit" type="submit" value="Login"/>
+</div>
+</form>
+</div>
+<div id="track_my_offers" style="display: none">
+<form accept-charset="UTF-8" action="/omnilogin/track" class="new_user" id="new_user" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"/></div> <div class="instructions">
+    You can track the status of an item by entering your email address
+    and PS/SR number. The PS/SR number can be found in emails received
+    from Gazelle. It looks like SR12345678901 or PS12345678901.
+  </div>
+<label for="email">Enter your email address</label>
+<input id="email" name="email" type="text"/>
+<label for="pssr">PS/SR Number</label>
+<input id="tracking_number" name="tracking_number" type="text"/>
+<input class="orange_button" name="commit" type="submit" value="Continue"/>
+</form>
+</div>
+<div id="special_notification"></div>
+<a class="logo" href="/"><h1><img src=""/></h1></a>
+<div class="main__nav">
+<nav>
+<ul class="rm grid top__tabs clearfix">
+<li><a class="top_tab trade_in active" href="/trade-in">Trade-In</a></li>
+<li><a class="top_tab buy_certified" href="//buy.gazelle.com">Buy Certified</a></li>
+<li class="ri checkout_area">
+<div id="activity_feed">
+<div class="cart"></div>
+<div id="inline_cart"></div>
+<div class="hidden" id="iphone_promo_content">
+<!-- Loading Content: 'iphone_promo_code/cart_notification' -->
+<p>* Price includes $10 bonus</p>
+<!-- Loaded Content: 'iphone_promo_code/cart_notification' -->
+</div>
+<script id="inline_cart_offer_template" type="text/template"><li class="<%= offer[0] %>">
+  <div class="product_image_area">
+    <div class="product_image">
+      <img alt="<%= offer[1] %>" src="<%= offer[4] %>"/>
+    </div>
+    <a href="<%= offer[5] %>" class="remove_link"
+      data-sr-number="<%= offer[0] %>">Remove</a>
+  </div>
+  <div class="offer_details">
+    <div class="procuct_name" title="<%= offer[1] %>"><strong><%= offer[1] %></strong></div>
+    <div class="product_condition"><strong>Condition</strong>: <%= offer[2] %></div>
+    <div class="product_value">
+      <strong>Value</strong>: $<%= offer[3] %>
+    </div>
+  </div>
+  <div class="clear"></div>
+</li>
+</script>
+<script id="inline_cart_bonus_template" type="text/template"><li class="<%= bonus[0] %>">
+  <div class="bonus_image_area">
+    <div class="bonus_image">
+      <img alt="<%= bonus[0] %>_img" height="40" width="26" src="<%= bonus[2] %>"/>
+    </div>
+  </div>
+  <div class="bonus_details">
+    <span class="bonus_name" title="<%= bonus[0] %>"><strong><%= bonus[0] %>:</strong></span>
+    <span class="bonus_value">$<%= bonus[1] %></span>
+  </div>
+  <div class="clear"></div>
+</li>
+</script>
+<script id="inline_cart_template" type="text/template"><div id="inline_cart_container">
+  <ul>
+    <%= offer_templates %>
+  </ul>
+  <ul>
+    <%= bonus_templates %>
+  </ul>
+  <div class="total">
+    <span class="value_annotation">Total: </span>
+    <span class="value_display" id="inline_cart_total"><%= total %></span>
+  </div>
+  <a href="<%= data.c %>" class="primary_action_button activity_replacement" id="inline_cart_checkout_button">
+    Checkout
+  </a>
+  <div class="store_credit total">
+    <span>Store credit: <b>$20</b> <small><a href="#" class="showTheColosus checkout_link">Learn More</a></small></span>
+  </div>
+  <a href="/trade-in" class="checkout_link" id="continue_shopping_link">Find Another Item</a>
+</div>
+</script>
+</div>
+</li>
+</ul>
+<div class="rm grid primary__navigation clearfix" id="product_nav">
+<ul>
+<li>
+<a href="/iphone">iPhone</a>
+</li>
+<li>
+<a href="/sell/cell-phone">Cell Phones</a>
+<ul>
+<li><a href="/iphone">Apple</a></li>
+<li><a href="/sell/cell-phone/blackberry-rim">BlackBerry</a></li>
+<li><a href="/sell/cell-phone/htc">HTC</a></li>
+<li><a href="/sell/cell-phone/lg">LG</a></li>
+<li><a href="/sell/cell-phone/motorola">Motorola</a></li>
+<li><a href="/sell/cell-phone/nokia">Nokia</a></li>
+<li><a href="/sell/cell-phone/samsung">Samsung</a></li>
+</ul>
+</li>
+<li>
+<a href="/ipad">iPad</a>
+</li>
+<li>
+<a href="/sell/tablet">Tablets</a>
+<ul>
+<li><a href="/ipad">Apple</a></li>
+<li><a href="/sell/tablet/amazon">Amazon</a></li>
+<li><a href="/sell/tablet/asus">Asus</a></li>
+<li><a href="/sell/tablet/google">Google</a></li>
+<li><a href="/sell/tablet/microsoft">Microsoft</a></li>
+<li><a href="/sell/tablet/samsung">Samsung</a></li>
+</ul>
+</li>
+<li>
+<a href="/sell/ipod">iPod</a>
+</li>
+<li>
+<a href="/sell/apple-computers">Apple Computers</a>
+<ul>
+<li><a href="/sell/macbook">Macbook</a></li>
+<li><a href="/sell/mac">Mac</a></li>
+</ul>
+</li>
+<li>
+<a href="/sell/apple-tv-display">Other Products</a>
+<ul>
+<li><a href="/sell/apple-tv">Apple TV</a></li>
+<li><a href="/sell/apple-display">Apple Display</a></li>
+</ul>
+</li>
+<li></li>
+</ul>
+<div class="clearfix"></div>
+</div>
+</nav>
+</div>
+<div class="top__right">
+<div class="profile__area">
+<span class="profile__inner" id="gigya_login_spot">
+</span>
+<p>Have questions? <strong>1.800.429.3553</strong></p>
+<span>|</span>
+<a href="https://gazelletradein.zendesk.com/hc/en-us">Help</a>
+<span>|</span>
+<a href="/gazelle-reviews" id="header_browse_category_link">The Gazelle Advantage</a>
+</div>
+<nav>
+<ul class="rm grid clearfix">
+<div id="omnilogin">
+<li><span><a href="/how_it_works" id="how_it_works_link" rel="#how_it_works_link_overlay">How It Works</a></span></li>
+<li><span><a class="track_my_offers" href="#">Track Offers</a></span></li>
+<li><span><a class="login" href="#">Login</a></span></li>
+</div>
+</ul>
+</nav>
+</div>
+<script charset="utf-8" type="text/javascript">
+  // <![CDATA[
+  var logged_in_omnilogin_view = "      <li>\n        <span><a href=\"/how_it_works\" id=\"how_it_works_link\" rel=\"#how_it_works_link_overlay\">How It Works<\/a><\/span>\n      <\/li>\n      <li>\n        <span><a href=\"/accounts/edit\" class=\"track_my_offers\">Update Account<\/a><\/span>\n      <\/li>\n      <li>\n        <span><a href=\"/accounts/summary\" class=\"track_my_offers\">Track My Offers<\/a><\/span>\n      <\/li>\n      <li>\n        <span><a href=\"/logout\" class=\"track_my_offers logout\">Logout<\/a><\/span>\n      <\/li>\n";
+  // ]]>
+</script>
+</header>
+</div>
+</div>
+<div class="'full_width_body" id="body_container" index_content&#x27;="">
+<div class="tall_product_image_container">
+<img alt="Iphone6splus_16gb" height="120" src="https://cdn.gazelle.com/gz_attachments/product_image/388/380/6/iPhone6SPlus_16GB.jpg" width="120"/>
+</div>
+<div class="core_calculator test2" id="calculator_core">
+<div class="product_info">
+<h2>Apple iPhone 6s Plus 16GB (AT&amp;T)</h2>
+<a class="change_model_link" href="/iphone/iphone-6s-plus/at-t?expanded=true">Change model</a>
+</div>
+<input id="category_id" name="category_id" type="hidden" value="5"/>
+<input id="category_manufacturer_id" name="category_manufacturer_id" type="hidden" value="4"/>
+<form accept-charset="UTF-8" action="https://www.gazelle.com/boxes/update_or_create?bypass_box_contents=true" id="g5_calculation_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"/><input name="authenticity_token" type="hidden" value="dxGuzihOkQ7Xjf42erINCB112kKmstrAEb+BE09AjiQ="/></div> <input id="product_id" name="product_id" type="hidden" value="496033"/>
+<div id="condition">
+<div class="open_form condition_open_form">
+<h3 class="question"><span class="number">1.</span> What condition is it in?</h3>
+<input id="calculator_condition" name="calculator_answers[8872]" type="hidden" value="0"/>
+<ul class="horizontal_selection product_condition_list clearfix trio">
+<li class="" data-option="26985" id="poor">
+<a href="#Broken">Broken</a>
+<p>Does not turn on or has serious <span>physical damage</span></p>
+</li>
+<li class="current selected" data-option="26987" id="good">
+<a href="#Good">Good</a>
+<p><span>Normal signs</span> of use</p>
+</li>
+<li class="" data-option="26988" id="perfect">
+<a href="#Flawless">Flawless</a>
+<p>Looks like it's <span>never been used</span></p>
+</li>
+</ul>
+<style>
+      #condition .powers-on-question-section {
+        padding: 20px 40px;
+        clear: both;
+        background: #d7d7d7;
+      }
+      #condition .powers-on-question {
+        font-size: 14px;
+      }
+      #condition .powers-on-question-section span.radio {
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 14px;
+      }
+      #condition .powers-on-question-section input[type='radio'] {
+        margin-right: 5px;
+      }
+    </style>
+<div class="powers-on-question-section" id="powers-on-question">
+<!-- Show powers on question -->
+<span class="powers-on-question">Does the phone power on?</span>
+<span class="radio">
+<label for="calculator_answers_8751_26505">
+<input class="valid_condition radio calculator_input" data-api-name="yes" id="calculator_answers_8751_26505" name="calculator_answers[8751]" type="radio" value="26505"/>Yes
+    </label>
+</span>
+<span class="radio">
+<label for="calculator_answers_8751_26506">
+<input class="valid_condition radio calculator_input" data-api-name="no" id="calculator_answers_8751_26506" name="calculator_answers[8751]" type="radio" value="26506"/>No
+    </label>
+</span>
+</div>
+<div class="checklist">
+<div id="iphones">
+<ul class="description poor">
+<li class="headline"><p>Choose this if your phone powers <strong>on</strong> and <strong>any</strong> of the following of these are true:</p></li>
+<li class="descriptionLi">Cracked screen or body</li>
+<li class="descriptionLi">Broken or cracked hardware</li>
+<li class="descriptionLi">Missing buttons or parts</li>
+</ul>
+<ul class="description good">
+<li class="headline"><p>Good means <strong>all</strong> of the following are true:</p></li>
+<li class="descriptionLi">No cracks on screen or body</li>
+<li class="descriptionLi">Powers on and makes calls</li>
+<li class="descriptionLi">No major scratches or scuffs</li>
+</ul>
+<ul class="description perfect">
+<li class="headline"><p>Flawless means <strong>all</strong> of these are true:</p></li>
+<li class="descriptionLi">Works perfectly</li>
+<li class="descriptionLi">No noticeable flaws, still in its package or looks like new</li>
+<li class="descriptionLi">Has zero scratches or scuffs</li>
+</ul>
+</div>
+</div>
+<div class="next_button">
+<a class="continue_button" href="#" id="next_calculator_button">Next</a>
+</div>
+</div>
+<div class="form_summary condtiion_form_summary" style="display:none">
+<h3>Condition: <span id="condition_short_name"></span> <a class="changeAnswers" href="#" id="change_answer_condition">Change</a></h3>
+</div>
+</div>
+<div class="additional_questions" style="display:none;">
+<div class="open_form accessory_open_form">
+<h3 class="question"><span class="number">2.</span> Additional Specs</h3>
+<div id="additional_errors">
+<h4>An accurate offer requires more information</h4>
+</div>
+<div class="accessories other_questions questions">
+<div class="questions_container">
+<fieldset class="other_question_section radio_section required_section">
+<input data-content="Financed ESN" name="calculator_answers[8782]" type="hidden" value="26628"/>
+</fieldset>
+<fieldset class="other_question_section radio_section required_section">
+<input data-content="Makes a call successfully?" name="calculator_answers[243]" type="hidden" value="521"/>
+</fieldset>
+</div>
+<a class="continue_button" href="/products/496033/calculation" id="calculate_button">Calculate</a>
+<div id="help_floater"><h3>The title</h3><div class="content"><div class="inn"></div></div></div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="form_summary accessory_form_summary" style="display:none">
+<h3>Additional Specs <a class="changeAnswers" href="#" id="change_answer_accessory">Change</a></h3>
+</div>
+</div>
+<div class="offer_presentation value">
+<div class="calculator_pane" id="monetary_offer_content">
+<div class="monetary_offer">
+<div class="titles">
+<h2><b>Choose your offer.</b> Unlock to earn more.</h2>
+<div class="largeFont">PLUS <b>$20 store credit</b> on buy.gazelle.com. <a class="showTheColosus large" href="#">Learn More</a></div>
+<p>Ship us your device by <span class="exp_date"></span></p>
+</div>
+<div class="offers clear"></div>
+<a class="two_prices" href="/unlocked_pricing" id="two_different_prices_link" rel="#two_different_prices_link_overlay">Unlocking your phone is easy. Here's how.</a>
+<div class="hidden" id="two_different_prices_overlay_content">
+<!-- Loading Content: 'app_partials/g3/calculator/unlocked_pricing_modal' -->
+<h2>How to unlock your phone.</h2>
+<div class="inn">
+<h4>The process is easy</h4>
+<p>Unlock your phone from the AT&amp;T network to get its full value.  The process is free and surprisingly painless.</p>
+<ul>
+<li data-num="1">Accept the offer and check out.</li>
+<li data-num="2">Submit the <a href="https://www.att.com/deviceunlock/client/en_US/">AT&amp;T unlock request form.</a>
+</li>
+<li data-num="3">AT&amp;T will confirm your request by email in 2 to 5 days.</li>
+<li data-num="4">Send us your phone.</li>
+</ul>
+<p id="unlocked_pricing_modal_bonus_text">If you're unable to unlock your phone before we receive it, we'll offer you today's AT&amp;T base price.</p>
+<a class="faq_link" href="https://gazelletradein.zendesk.com/hc/en-us/articles/202612535-How-do-I-unlock-my-AT-T-iPhone-" target="_blank">View FAQ for more detail</a>
+</div>
+<!-- Loaded Content: 'app_partials/g3/calculator/unlocked_pricing_modal' -->
+</div>
+<h4 class="hidden expiration_date_message"><!-- Loading Content: 'app_partials/g3/calculator/desktop_offer_expiration' -->
+<p>Offers are likely to decrease over time, so sell now to get a great price.</p>
+<!-- Loaded Content: 'app_partials/g3/calculator/desktop_offer_expiration' -->.</h4>
+</div>
+<script id="offer_snippet" type="text/template">
+<div class='offer_inner_content<%= value["class"] %>'>
+  <% if (value['class'] != ' unlocked' && value['class'] != ' locked') { %>
+    <div class='clearfix'>
+      <h2><%= value['title'] %></h2>
+      <h3>$<span data-oldoffer><%= value['offer'] %></span></h3>
+      <h2 id="superInlineH2">Trade-in Cash</h2>
+      <div class='hidden promo_notification'>
+        <h3 id="promo-first-h3"></h3>
+        <h2 id="promo-first-h2">Bonus</h2>
+        <hr id="promo-hr">
+        <div class="clearfix">
+          <h3 id="promo-second-h3">$<span><%= value['offer'] %></h3>
+          <h2 id="promo-second-h2">Total Cash</h2>
+        </div>
+      </div>
+    </div>
+    <% if (Calculator.checkUnlockedPricingIsActive()) { %>
+      <div class="newCreditLine"><b>PLUS $20 credit</b> toward the purchase of a device on our store. <a href="#" class="showTheColosus">Learn More</a></div>
+    <% } %>
+  <% } else { %>
+    <div class='clearfix'>
+      <h3>$<span data-oldoffer><%= value['offer'] %></span></h3>
+      <h2 class="title"><%= value['title'] %></h2>
+    </div>
+    <div class='hidden promo_notification'>
+      <h3 id="promo-first-h3"></h3>
+      <h2>Bonus</h2>
+      <hr id='wideHr'>
+      <div class="clearfix">
+        <h3 id="promo-second-h3">$<span><%= value['offer'] %></span></h3>
+        <h2 class="mar-top">Total Cash</h2>
+      </div>
+    </div>
+    <ul><%= value['subtitle'] %></ul>
+  <% } %>
+  <div class='submit_container'>
+    <%= value['input_button'] %>
+    <div class="activity_indicator"><img alt="Activity_indicator" class="submit_activity_indicator" src="//m1-beta.gazelle.com/assets/activity_indicator-5f9ee5dfd0a5d36dedd0980496f77c22.gif" /></div>
+  </div>
+  <% if (!Calculator.checkUnlockedPricingIsActive()) { %>
+    <div class="newCreditLine mar-top"><b>PLUS $20 credit</b> toward the purchase of a device on our store. <a href="#" class="showTheColosus">Learn More</a></div>
+  <% } %>
+  <div class='clear'></div>
+  <div class="newCreditLine broken"><b>PLUS $20 credit</b> toward the purchase of a device on our store. <a href="#" class="showTheColosus">Learn More</a></div>
+</div>
+</script>
+<script> var wit_url = 'https://g3-gz-wit.herokuapp.com/status/tmobile/'; </script>
+<div class="imei_check" id="offerImeiOne">
+<div class="imei_check_response">
+<table class="imei_status">
+<tr>
+<td id="message_part_1">
+<span class="msg" id="setClearStatusMessageOne">Great! You have no outstanding financing commitment <br> with T-Mobile.</br></span>
+<span class="msg" id="setStolenStatusMessageOne">Our records show that this device has been reported lost or stolen. <br> Please call T-Mobile if you believe this to be in error.</br></span>
+<span class="msg" id="setActiveContractStatusMessageOne">This phone is subject to an annual contract term. <br> Please call T-Mobile to settle your account before sending your phone.</br></span>
+<span class="msg" id="setActiveBlockedStatusMessageOne">This phone has been locked by T-Mobile. <br> Please call T-Mobile to settle your account before sending your phone.</br></span>
+<span class="msg" id="setFinancedStatusMessageOne">You still have payments due on your financed phone. <br> You must pay T-Mobile in full before sending it to us.</br></span>
+<span class="msg" id="setCallCarrierStatusMessageOne">We could not determine your status of your account at this time.  <br> Click "Get Paid" to sell your phone and we will check</br></span>
+<div class="msg" id="setInvalidStatusMessageOne">Invalid IMEI.</div>
+</td>
+</tr>
+<tr>
+<td id="message_part_2">
+<span class="msg" id="setClearStatusMessageTwo">Click "Get Paid" to sell your phone!</span>
+<span class="msg" id="setStolenStatusMessageTwo">Phones reported lost or stolen have $0 trade-in value.</span>
+<span class="msg" id="setActiveContractStatusMessageTwo">Unsettled accounts can cause a reduction in trade-in value.</span>
+<span class="msg" id="setActiveBlockedStatusMessageTwo">Unsettled accounts can cause a reduction in trade-in value.</span>
+<span class="msg" id="setFinancedStatusMessageTwo">Phones that are not paid off in full have $0 trade-in value.</span>
+<span class="msg" id="setCallCarrierStatusMessageTwo">with T-Mobile again when we receive it.</span>
+<span class="msg" id="setInvalidStatusMessageTwo">Click the link below on how to find the number and try again.</span>
+</td>
+</tr>
+</table>
+</div>
+<br>
+<div class="imei_check_request">
+<div id="attention">Attention T-Mobile Equipment Installment Plan (EIP) Customers:</div>
+<div id="customer_message">You must have fully paid for your iPhone in order to sell it.</div>
+<div class="link_to_check_imei">
+<table>
+<tr>
+<td id="link_text">Click here to validate that your phone is paid off</td>
+<td id="link_switch">+</td>
+</tr>
+</table>
+</div>
+<div id="imei_check_partial">
+<div class="imei_check_form">
+<input id="imei_input_field" name="imei_input_field" placeholder="Enter the IMEI Number" type="text"/>
+<div class="how_to_find_imei">
+<div id="how_to_link">How do I find my IMEI Number?</div>
+<div class="directions">
+<div id="part_1">
+              Dial the IMEI code. You can retrieve the IMEI/MEID number <br>
+              on virtually any phone by dialing in the universal code.
+            </br></div>
+<table id="part_2">
+<tr>
+<td>Dial</td>
+<td><div class="number_to_dial">*</div></td>
+<td><div class="number_to_dial">#</div></td>
+<td><div class="number_to_dial">0</div></td>
+<td><div class="number_to_dial">6</div></td>
+<td><div class="number_to_dial">#</div></td>
+</tr>
+</table>
+<div id="part_3">
+              You typically will not need to press the Call or Send button, as the <br>
+              IMEI/MEID number will appear as soon as you finish dialing the code. <br><br>
+              If your phone is broken, contact your carrier.
+            </br></br></br></div>
+</div>
+</div>
+<img alt="Activity_indicator" id="activity_indicator_gif" src="//m2-beta.gazelle.com/assets/activity_indicator-5f9ee5dfd0a5d36dedd0980496f77c22.gif"/>
+<button id="submit_imei_check" name="button" type="button">Submit</button>
+<br>
+</br></div>
+</div>
+</div>
+</br></div>
+</div>
+</div>
+</form> <div class="offer_presentation recycle">
+<div class="calculator_pane" id="recyclable_offer_content">
+<h3>Unfortunately, we can't offer you any money for this item</h3>
+<p>Even though we can't pay you, we'd still like to help you recycle it responsibly.<br/>
+  Please <a href="/recycling" target="_blank">check out these recycling resources</a> for ideas on how you can recycle electronics simply and safely.</p>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<script id="offer_snippet" type="text/template">
+<div class='offer_inner_content<%= value["class"] %>'>
+  <!--// offer_snippet //-->
+  <h1><%= value['title'] %></h1>
+  <h3>$<span><%= value['offer'] %></span></h3>
+  <ul><%= value['subtitle'] %></ul>
+  <div class='hidden promo_notification'></div>
+  <div class='submit_container'>
+    <%= value['input_button'] %>
+    <div class="activity_indicator"><img alt="Activity_indicator" class="submit_activity_indicator" src="//m2-beta.gazelle.com/assets/activity_indicator-5f9ee5dfd0a5d36dedd0980496f77c22.gif" /></div>
+  </div>
+  <div class="newCreditLine">PLUS <b>$20 store credit</b> on buy.gazelle.com. <a href="#" class='showTheColosus'>Learn More</a></div>
+  <div class='clear'></div>
+</div>
+</script>
+<script id="offer_snippet_more" type="text/template">
+<div class='offer_inner_content<%= value["class"] %>'>
+  <!--// offer_snippet_more //-->
+  <div class="clearfix">
+    <h1><%= value['title'] %></h1>
+    <h3>$<span><%= value['offer'] %></span></h3>
+  </div>
+  <p class="sub_text"></p>
+  <div class='hidden promo_notification'></div>
+  <div class='submit_container'>
+    <%= value['input_button'] %>
+    <div class="activity_indicator"><img alt="Activity_indicator" class="submit_activity_indicator" src="//m0-beta.gazelle.com/assets/activity_indicator-5f9ee5dfd0a5d36dedd0980496f77c22.gif" /></div>
+  </div>
+  <div class="newCreditLine">PLUS <b>$20 store credit</b> on buy.gazelle.com. <a href="#" class='showTheColosus'>Learn More</a></div>
+  <div class='clear'></div>
+</div>
+</script>
+<script id="offer_snippet_less" type="text/template">
+  <!--// offer_snippet_less //-->
+<div class='offer_inner_content<%= value["class"] %>'>
+  <div class="clearfix">
+    <h1><%= value['title'] %></h1>
+    <h3>$<span><%= value['offer'] %></span></h3>
+  </div>
+  <div class='submit_container'>
+    <%= value['input_button'] %>
+    <div class="activity_indicator"><img alt="Activity_indicator" class="submit_activity_indicator" src="//m3-beta.gazelle.com/assets/activity_indicator-5f9ee5dfd0a5d36dedd0980496f77c22.gif" /></div>
+  </div>
+  <div class="newCreditLine">PLUS <b>$20 store credit</b> on buy.gazelle.com. <a href="#" class='showTheColosus'>Learn More</a></div>
+</div>
+</script>
+<script id="main_offer_snippet" type="text/template">
+<div class='inline_offer<%= value["class"] %>'>
+  <h1>Your Offer</h1>
+  <h3>$<span></span></h3>
+  <div class='ship_date'><img alt="Icn_calendar" class="cal" src="//m0-beta.gazelle.com/assets/mobile/icn_calendar-073b17a469c2c3a1959cc2c77a7e99de.png" />Ship us your device by <span class="date"></span></div>
+  <div class='hidden promo_notification'></div>
+  <div class='submit_container'>
+    <%= value["input_button"] %>
+    <div class="activity_indicator">
+      <img alt="Activity_indicator" class="submit_activity_indicator" src="//m0-beta.gazelle.com/assets/activity_indicator-5f9ee5dfd0a5d36dedd0980496f77c22.gif" />
+    </div>
+  </div>
+  <div class="newCreditLine">PLUS <b>$20 store credit</b> on buy.gazelle.com. <a href="#" class='showTheColosus'>Learn More</a></div>
+  <div class='clear'></div>
+</div>
+</script>
+<script>
+  var Calculator = Calculator || {};
+  Calculator.category_name      = 'Cell Phones';
+  Calculator.manufacturer_name  = 'Apple';
+  Calculator.express            = true;
+  Calculator.selected_condition = 'good'.toLowerCase();
+  Calculator.product_id         = '496033';
+  set_calculator_cookie = true;
+
+  var show_unlocked_pricing = false;
+  var unlocked_version_id = null;
+  var unlocked_questions = null;
+  var unlocked_questions_condition_id = null;
+  var unlocked_questions_condition_options = null;
+</script>
+<!-- Loading Content: 'app_partials/g3/calculator/unlock_test_data?v=1' -->
+<script>
+var CalculatorUnlockTest = CalculatorUnlockTest || {};
+var test_content = {
+  "test_1": {
+    "broken": {
+      "title": "Broken/Cracked",
+      "description": "Has serious <strong>physical issues</strong>",
+      "content_headline": "<p>Broken means any of these are true:</p>",
+      "content_bullets": "<li>Cracked screen or body</li><li>Doesn’t power on or make calls</li><li>Missing buttons or parts</li>"
+    },
+    "good": {
+      "title": "Good",
+      "description": "<strong>Normal signs</strong> of use",
+      "content_headline": "<p>Good means:</p>",
+      "content_bullets": "<li>No cracks on screen or body</li><li>Powers on and makes calls</li><li>No major scratches or scuffs</li>"
+    },
+    "flawless": {
+      "title": "Flawless",
+      "description": "<strong>Looks like it's never been used</strong>",
+      "content_headline": "<p>Flawless means all of these are true:</p>",
+      "content_bullets": "<li>Like new, no scuffs or scratches</li><li>No Cracked screen or body</li><li>Everything works perfectly</li>"
+    },
+    "page_two": {
+      "top_title": "You must unlock your phone to get its full value",
+      "sub_title": "AT&T phones are locked by default, but you can unlock them to increase their value"
+    }
+  },
+  "test_2": {
+    "broken": {
+      "title": "Broken/Cracked",
+      "description": "Has serious <strong>physical issues</strong>",
+      "content_headline": "<p>Broken means any of these are true:</p>",
+      "content_bullets": "<li>Cracked screen or body</li><li>Doesn’t power on or make calls</li><li>Missing buttons or parts</li>"
+    },
+    "good": {
+      "title": "Good",
+      "description": "<strong>Normal signs</strong> of use",
+      "content_headline": "<p>Good means:</p>",
+      "content_bullets": "<li>No cracks on screen or body</li><li>Powers on and makes calls</li><li>No major scratches or scuffs</li>"
+    },
+    "flawless": {
+      "title": "Flawless",
+      "description": "<strong>Looks like it's never been used</strong>",
+      "content_headline": "<p>Flawless means all of these are true:</p>",
+      "content_bullets": "<li>Like new, no scuffs or scratches</li><li>No cracked screen or body</li><li>Everything works perfectly</li>"
+    },
+    "page_two": {
+      "top_title": "<strong>Choose your offer</strong> Unlock to earn more",
+      "sub_title": "",
+      "sub_text_unlocked": "Increase your phone's value by unlocking it online for free.",
+      "sub_text_locked": "AT&T phones are locked by default and only work on their network.<br><br>"
+    }
+  },
+  "test_3": {
+   "broken": {
+      "title": "Broken/Cracked",
+      "description": "Has serious <strong>physical issues</strong>",
+      "content_headline": "<p>Broken means any of these are true:</p>",
+      "content_bullets": "<li>Cracked screen or body</li><li>Doesn’t power on or make calls</li><li>Missing buttons or parts</li>"
+    },
+    "good": {
+      "title": "Good",
+      "description": "<strong>Normal signs</strong> of use",
+      "content_headline": "<p>Good means:</p>",
+      "content_bullets": "<li>No cracks on screen or body</li><li>Powers on and makes calls</li><li>No major scratches or scuffs</li>"
+    },
+    "flawless": {
+      "title": "Flawless",
+      "description": "<strong>Looks like it's never been used</strong>",
+      "content_headline": "<p>Flawless means all of these are true:</p>",
+      "content_bullets": "<li>Like new, no scuffs or scratches</li><li>No Cracked screen or body</li><li>Everything works perfectly</li>"
+    },
+    "page_two": {
+      "top_title": "You must unlock your phone to get its full value",
+      "sub_title": "AT&T phones are locked by default, but you can unlock them to increase their value"
+    }
+  }
+};
+</script>
+<!-- Loaded Content: 'app_partials/g3/calculator/unlock_test_data?v=1' -->
+<div class="page_clear"></div>
+</div><!--// #body_container application //-->
+</div><!--// #above_footer_wrapper //-->
+<div id="footer_container">
+<div class="footer-container">
+<footer class="top clearfix">
+<div class="connect__withus">
+<h4>Connect with Us</h4>
+<ul class="rm grid clearfix">
+<li>
+<a href="//twitter.com/gazelle">
+<img alt="Social_twitter" src="//m0-beta.gazelle.com/assets/contracted/social_twitter-9a2030496cf49ae6cc9c46491b4d28b8.svg"/>
+            11.8K Followers
+</a> </li>
+<li>
+<a href="//plus.google.com/+gazelle">
+<img alt="Social_google" src="//m1-beta.gazelle.com/assets/contracted/social_google-76d10ae9ca7a8d7dbfb64b59aeb676d6.svg"/>
+            1,509 Followers
+</a> </li>
+<li>
+<!-- Extole Placeholder -->
+<script type="extole/widget">
+            {"zone":"store_global_footer"}
+          </script>
+</li>
+<li>
+<a href="//facebook.com/Gazelle.com">
+<img alt="Social_facebook" src="//m1-beta.gazelle.com/assets/contracted/social_facebook-a9aa9d31751a8850ea23a807c4aa83d0.svg"/>
+            79,068 Likes
+</a> </li>
+<li>
+<a href="//gazelle.com/thehorn">
+<img alt="Social_blog" src="//m1-beta.gazelle.com/assets/contracted/social_blog-760b277546c49fd4d28ea7ba241f874b.svg"/>
+            Read Our Blog
+</a> </li>
+</ul>
+</div>
+<div class="link__tos">
+<a href="/our_story">About Gazelle</a>
+<a href="/media">Press</a>
+<a href="/legal">Legal</a>
+<a href="/contact">Contact</a>
+<a href="/careers">Careers</a>
+<a href="https://gazelle.com/gazelleforgood">Gazelle for Good</a>
+<a href="/business">Bulk Sales</a>
+<a href="/affiliate-program">Become an Affiliate</a>
+</div>
+<div class="help__me">
+<h4>Need Help?</h4>
+<p>Search our FAQs or chat with us in our <a href="https://gazelletradein.zendesk.com/hc/en-us">Help Center</a></p>
+</div>
+</footer>
+<footer class="btm clearfix">
+<div class="popular_searches">
+<h4>Popular Searches</h4>
+<!-- Loading Content: '/app_partials/index/footer_links' -->
+<table width="900">
+<tr>
+<td><a href="http://www.gazelle.com/sell/cell-phone">Sell My Cell Phone</a></td>
+<td><a href="http://www.gazelle.com/iphone">Sell Your iPhone</a></td>
+<td><a href="http://www.gazelle.com/samsung">Sell Samsung Galaxy</a></td>
+<td><a href="http://www.gazelle.com/sell/macbook">MacBook Trade In</a></td>
+<td><a href="http://www.gazelle.com/sell/cell-phone/blackberry-rim">Sell BlackBerry</a></td>
+</tr>
+<tr>
+<td><a href="http://www.gazelle.com/sell/cell-phone/samsung">Sell Samsung Phone</a></td>
+<td><a href="http://www.gazelle.com/sell/cell-phone">Cash for Used Cell Phone</a></td>
+<td><a href="http://www.gazelle.com/trade-in/ipad">Sell iPad </a></td>
+<td><a href="http://www.gazelle.com/iphone/iphone-5">Sell iPhone 5</a></td>
+<td><a href="http://www.gazelle.com/sell/macbook">Sell MacBook</a></td>
+</tr>
+<tr>
+<td><a href="http://www.gazelle.com/is-gazelle-a-scam">Gazelle.com a scam?</a></td>
+<td><a href="http://www.gazelle.com/sell/cell-phone">Sell Your Android Phone</a></td>
+<td><a href="http://www.gazelle.com/iphone">Sell Broken iPhone</a></td>
+<td><a href="http://www.gazelle.com/sell/macbook/macbook-air">Sell MacBook Air</a></td>
+<td><a href="http://www.gazelle.com/reviews">Gazelle.com Reviews</a></td>
+</tr>
+<tr>
+<td><a href="http://www.gazelle.com/sell/tablet/samsung">Sell Samsung Tablet</a></td>
+<td><a href="http://www.gazelle.com/sell/cell-phone/samsung">Sell Galaxy S</a></td>
+<td><a href="http://www.gazelle.com/business">Sell Cell Phones in Bulk</a></td>
+<td><a href="http://www.gazelle.com/business">Sell Electronics in Bulk</a></td>
+<td><a href="http://www.gazelle.com/trade-in/iphone">Trade-in iPhone</a></td>
+</tr>
+<tr>
+<td><a href="http://www.gazelle.com/trade-in/ipad">Trade-in iPad</a></td>
+<td><a href="http://buy.gazelle.com/buy/used/iphone-5">Buy Used iPhone 5</a></td>
+<td><a href="http://buy.gazelle.com/buy/used/iphone-5s">Buy Used iPhone 5S</a></td>
+<td><a href="http://buy.gazelle.com/buy-used-iphone">Buy Used iPhone</a></td>
+<td><a href="http://buy.gazelle.com/buy-used-cell-phones">Buy Used Cell Phones</a></td>
+</tr>
+<tr>
+<td><a href="http://buy.gazelle.com/buy-used-ipad">Buy Used iPad </a></td>
+<td><a href="http://buy.gazelle.com/buy/used/ipad-mini">Buy Used iPad Mini </a></td>
+<td><a href="http://buy.gazelle.com/buy/used/ipad-2">Buy Used iPad 2</a></td>
+<td><a href="http://buy.gazelle.com/buy/used/ipad-4">Buy Used iPad 4</a></td>
+</tr>
+</table>
+<!-- Loaded Content: '/app_partials/index/footer_links' -->
+</div>
+<div class="certifications">
+<h4>Certifications</h4>
+<div id="cert_footer">
+<div class="inner_text">
+<script charset="utf-8" type="text/javascript">
+  // <![CDATA[
+  var cert_footer = "                <iframe id=\"cert_footer_frame\" frameborder=\"0\" src=\"/cert_footer\">&nbsp;<\/iframe>\n";
+  // ]]>
+</script>
+</div>
+</div>
+</div>
+</footer>
+<div class="footnote">
+<p>©2015 Gazelle, Inc. All Rights Reserved, Patents Pending.</p>
+<p>Gazelle is not affiliated with the manufacturers of the items available for trade-in. Gazelle and the Gazelle logo are trademarks of Gazelle, Inc., registered in the U.S. All other trademarks, logos and brands are the property of their respective owners.</p>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+  window.CONTROLLER = "products";
+  window.ACTION = "show";
+  window.ENV = "production";
+</script>
+<script>
+if($) {
+  if(!$.event) $.event = {};
+  if(!$.fn) $.fn = {};
+  if(!$.ajax) $.ajax = {};
+  if(!$.isFunction) $.isFunction = function(){};
+}
+</script>
+<script src="//m2-beta.gazelle.com/assets/vendor/raven.min-4330f634506cef775f658221cb9dbf94.js" type="text/javascript"></script>
+<!-- Loading Content: '/app_partials/tracking/exception' -->
+<div class="hidden"></div>
+<script>
+(function(){
+  var ravenOptions = {
+    dataCallback: function(data){
+      data.tags = data.tags || {};
+      data.tags.environment = window.ENV;
+      data.tags.route = window.CONTROLLER + '#' + window.ACTION;
+      data.tags.controller = window.CONTROLLER;
+      data.tags.action = window.ACTION;
+      return data;
+    },
+    ignoreErrors: [
+      // Random plugins/extensions
+      'top.GLOBALS',
+      // See: https://blog.errorception.com/2012/03/tale-of-unfindable-js-error. html
+      'originalCreateNotification',
+      'canvas.contentDocument',
+      'MyApp_RemoveAllHighlights',
+      'https://tt.epicplay.com',
+      'Can\'t find variable: ZiteReader',
+      'jigsaw is not defined',
+      'ComboSearch is not defined',
+      'https://loading.retry.widdit.com/',
+      'atomicFindClose',
+      // Facebook borked
+      'fb_xd_fragment',
+      // ISP "optimizing" proxy - `Cache-Control: no-transform` seems to reduce this. (thanks @acdha)
+      // See https://stackoverflow.com/questions/4113268/how-to-stop-javascript-injection-from-vodafone-proxy
+      'bmi_SafeAddOnload',
+      'EBCallBackMessageReceived',
+      // See https://toolbar.conduit.com/Developer/HtmlAndGadget/Methods/JSInjection.aspx
+      'conduitPage',
+      'Script error',
+      'Unspecified error.',
+      'Uncaught Error: Error connecting to extension pioclpoplcdbaefihamjohnefbikjilc',
+      'Uncaught Error: Error connecting to extension nemfjadlboooiffmcelkafilagddogim',
+      'Uncaught Error: Error connecting to extension epanfjkfahimkgomnigadpkobaefekcd',
+      'Uncaught Error: Error connecting to extension bejbohlohkkgompgecdcbbglkpjfjgdj',
+      "TypeError: 'undefined' is not an object",
+      'QuotaExceededError: DOM Exception 22',
+      "ReferenceError: Can't find variable: atomicFindClose"
+    ],
+    whitelistUrls: [/gazelle(testing|staging|sandbox|integration)?\.com/i]
+  };
+  Raven.config('https://4405c22edb1a4666820c5bf8c85e1e4b@app.getsentry.com/10057', ravenOptions).install();
+})();
+</script>
+<!-- Loaded Content: '/app_partials/tracking/exception' -->
+<div class="overlay" id="two_different_prices_link_overlay">
+<div class="activity_indicator"><img alt="Activity_indicator" src="//m3-beta.gazelle.com/assets/warp_drive/shared/activity_indicator-fce9e7a1c6b30bf07aeaf7f7e0673d98.gif"/></div>
+<div class="contentWrap">
+</div>
+</div>
+<div class="overlay" id="how_it_works_link_overlay">
+<div class="activity_indicator"><img alt="Activity_indicator" src="//m0-beta.gazelle.com/assets/warp_drive/shared/activity_indicator-fce9e7a1c6b30bf07aeaf7f7e0673d98.gif"/></div>
+<div class="contentWrap">
+</div>
+</div>
+<script type="text/javascript">
+  window.Promo = window.Promo || {};
+  Promo.options = Promo.options || {};
+  Promo.options.enabled = true;
+  Promo.options.parameter_name = 'promo';
+  Promo.options.cookie_name = 'promo';
+  Promo.options.cookie_expire_at = 1;
+</script>
+<script src="//m0-beta.gazelle.com/assets/calculator-684b3ac3818c95b3ee1016ef04c84b41.js" type="text/javascript"></script>
+<script charset="utf-8" type="text/javascript">
+
+  // <![CDATA[
+    var two_different_prices_link_overlay_initializer = function() {};
+    var two_different_prices_link_overlay_on_completion = function() {};
+    var two_different_prices_link_overlay_on_finished = function() {};
+    var overlayFormValidation = function(e) {};
+    var overlayFormHandling = function(e) {};
+    var two_different_prices_link_overlay_on_before_load = function(that, id) { defaultBeforeLoad(that, id) };
+
+    $(function() {
+      $('a[rel=#two_different_prices_link_overlay]').overlay({
+        expose: { color: '#666666', loadSpeed: 'fast' },
+        loadSpeed: 'fast',
+        fixed: false,
+        closeOnClick: false,
+        top: "10%",
+        left: "0",
+        onBeforeLoad: function () {
+          two_different_prices_link_overlay_on_before_load(this, "two_different_prices_link");
+        },
+        onLoad: function () {
+          two_different_prices_link_overlay_initializer();
+        }
+      })
+    });
+  // ]]>
+
+  </script>
+<script charset="utf-8" type="text/javascript">
+
+  // <![CDATA[
+    var how_it_works_link_overlay_initializer = function() {};
+    var how_it_works_link_overlay_on_completion = function() {};
+    var how_it_works_link_overlay_on_finished = function() {};
+    var overlayFormValidation = function(e) {};
+    var overlayFormHandling = function(e) {};
+    var how_it_works_link_overlay_on_before_load = function(that, id) { defaultBeforeLoad(that, id) };
+
+    $(function() {
+      $('a[rel=#how_it_works_link_overlay]').overlay({
+        expose: { color: '#666666', loadSpeed: 'fast' },
+        loadSpeed: 'fast',
+        fixed: false,
+        closeOnClick: false,
+        top: "10%",
+        left: "0",
+        onBeforeLoad: function () {
+          how_it_works_link_overlay_on_before_load(this, "how_it_works_link");
+        },
+        onLoad: function () {
+          how_it_works_link_overlay_initializer();
+        }
+      })
+    });
+  // ]]>
+
+  </script>
+<!-- Loading Content: '/app_partials/tracking/application_snippets' -->
+<div class="pixel"></div>
+<script type="text/javascript"> 
+(function(){if (!document.referrer.match(/gazelle\w*?\.com/)){ 
+    floodlightImg = new Image(); 
+    var category; 
+    var hostProtocol = ((window.location.protocol == 'https:') ? 'https' : 'http'); 
+    if (!document.cookie.match(/gzl_floodlight_session/)){ 
+      sessionId = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) { 
+        var r = Math.random()*16|0, v = c == 'x' ? r : (r&0x3|0x8); 
+        return v.toString(16);}); 
+      document.cookie = ['gzl_floodlight_session=', sessionId, ';'].join(''); 
+    } 
+    switch(window.location.pathname) 
+    { 
+      case '/': 
+        category = 'httpw531'; 
+        break; 
+      case '/funnels/iphone':
+        category = 'funne284';
+        break;
+      case '/iphone': 
+        category = 'blyls954'; 
+        break; 
+      case '/sell/cell-phone': 
+        category = 'httpw574'; 
+        break; 
+      case '/why-gazelle': 
+        category = 'httpw326'; 
+        break; 
+      case '/reviews': 
+        category = 'httpw386'; 
+        break; 
+    } 
+    if (category){ 
+      floodlightImg.src = hostProtocol + "://ad.doubleclick.net/activity;src=4167343;type=gazel508;cat=" + category + ";ord=" + document.cookie.match(/gzl_floodlight_session=(.{36})/)[1] + "?"; 
+    } 
+  } 
+})(); 
+</script><script>
+var KillIt = {
+  killProcess: function() {
+    if (typeof($('.device_nav').swipe) !== 'undefined') {
+        $('.device_nav').swipe('destroy');
+    } else {
+        setTimeout(function() { KillIt.killProcess(); }, 250);
+    }
+  }
+};
+$(document).ready(function() {
+  var host_reg = /^m(b)?.gazelle/;
+  if (host_reg.test(window.location.hostname)) {
+    KillIt.killProcess();
+  }
+});
+</script><script type="text/javascript"> 
+(function(d,s){var js=d.getElementsByTagName(s)[0];var 
+r=d.createElement(s);r.src=("https:"==location.protocol?"https:":"http:")+"//static.criteo.net/js/ld/ld.js";
+js.parentNode.insertBefore(r,js)})(document,"script") 
+</script><script>(function() { 
+  var _fbq = window._fbq || (window._fbq = []); 
+  if (!_fbq.loaded) { 
+    var fbds = document.createElement('script'); 
+    fbds.async = true; 
+    fbds.src = '//connect.facebook.net/en_US/fbds.js'; 
+    var s = document.getElementsByTagName('script')[0]; 
+    s.parentNode.insertBefore(fbds, s); 
+    _fbq.loaded = true; 
+  } 
+  _fbq.push(['addPixelId', '1470853519839104']); 
+})(); 
+window._fbq = window._fbq || []; 
+window._fbq.push(['track', 'PixelInitialized', {}]); 
+</script><noscript><img alt="" height="1" src="https://www.facebook.com/tr?id=1470853519839104&amp;ev=NoScript" style="display:none" width="1"/></noscript>
+<script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"4028728"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
+<!-- Loaded Content: '/app_partials/tracking/application_snippets' -->
+<script type="text/javascript">
+  $(document).ready(function() {
+    window.criteo_q = window.criteo_q || [];
+    window.criteo_q.push(
+     { event: "setAccount", account: Analytics.criteoAccountId() },
+     { event: "setCustomerId", id: 'false' },
+     { event: "setSiteType", type: 'd' },
+     { event: "setData", ui_devicetype: 'iphone' },
+     { event: "viewItem", item: "gazelle" }
+    );
+  });
+</script>
+<script type="text/javascript">
+    var google_tag_params = {
+      category: ''
+    };
+  </script>
+<script type="text/javascript">
+    /* <![CDATA[ */
+      var google_conversion_id = 1065644706;
+      var google_custom_params = window.google_tag_params;
+      var google_remarketing_only = true;
+    /* ]]> */
+  </script>
+<script src="//www.googleadservices.com/pagead/conversion.js" type="text/javascript">
+</script>
+<noscript>
+<div style="display:inline;">
+<img alt="" height="1" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1065644706/?value=0&amp;guid=ON&amp;script=0" style="border-style:none;" width="1"/>
+</div>
+</noscript>
+<script type="text/javascript">
+  (function(q,i,s,l){for(l=q.length;i<l;){$.apply(this,s.call(q[i++]));}_ready=null;}(_ready.q(),0,Array.prototype.slice));
+  </script>
+<div id="fb-root"></div>
+<script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=261536670612426";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+<script charset="utf-8" type="text/javascript">
+    window.twttr = (function (d,s,id) {
+      var t, js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+      js.src="//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+      return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+    }(document, "script", "twitter-wjs"));
+  </script>
+</body>
+</html>
+
