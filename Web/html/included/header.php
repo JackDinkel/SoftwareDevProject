@@ -7,7 +7,8 @@
         </head>
 
         <body class="container">
-                <header>
+	<div class="sectionTop">
+                <header >
                         <h1>Buy and sell your devices!</h1>
                 </header>
 
