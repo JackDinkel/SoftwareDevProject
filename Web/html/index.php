@@ -2,6 +2,7 @@
 <?php include 'included/navbar.php'; ?>
 
 <section>
+	<p>Hello</p>
 </section>
 
 
