@@ -171,17 +171,40 @@ function manufacturer()
 
 function readbuttons(buttontype, list)
 {
+    /*
+     * This function is meant to be used on buttons. It will check
+     * if a button is checked and cross reference that with a 
+     * hard coded list (above) to find the correct value to return.
+     * The return value is a coefficient to be multiplied into the
+     * total phone price.
+     *
+     * Eventually, it would be nice to have some sort of functionality
+     * where the list is not hard coded but rather imported, either
+     * from a formatted document, a database of some sort, or perhaps
+     * I could write a python scrip that will generate a JavaScript
+     * file from one of the other two.
+     *
+     * The function takes two arguments
+     *      1. buttontype: the name of the button from the html
+     *         document - examples: "contract", "used", "power"
+     *      2. list: the name of the list containing to coefficients
+     *         to which the buttons correspond
+     */
+
+    //the multiplier to return
     var coefficient = 1;
 
-    var form = document.forms["form"];
-    var buttonList = form.elements[buttontype];
+    var form = document.forms["form"]; //selecting the html file
+    var buttonList = form.elements[buttontype]; //selecting which buttons to use
 
+    //loop through each button until a checked one is found
+    //if it is checked, we can break, since no others will be checked
     for (var i = 0; i < buttonList.length; i++)
     {
         if(buttonList[i].checked)
         {
-            coefficient = list[buttonList[i].value];
-            break;
+            coefficient = list[buttonList[i].value]; //consult the appropriate list to
+            break;                                   //  find the correct coefficient
         }
     }
     return coefficient;
@@ -189,21 +212,38 @@ function readbuttons(buttontype, list)
 
 function hideTotal()
 {
-    var divobj = document.getElementById('totalPrice');
-    divobj.style.display='none';
+    /*
+     * This simple function can be called to make the total price at
+     * the bottom of the form not be displayed. It is intended to be
+     * used at the beginning so that the total is not shown until
+     * some sort of calculation has been performed, but it could also
+     * be used in case of error, or other purposes.
+     */
+
+    var divobj = document.getElementById('totalPrice'); //grab the totalPrice element
+    divobj.style.display='none'; //set it to not display
 }
 
 function calculateTotal()
 {
-    var totalprice = manufacturer();
+    /*
+     * This function calculates the total price from the inputs
+     * and displays the results in the element 'totalPrice'.
+     * This is intended to be called repeatedly after each change
+     * or input to the form so that the displayed price is always
+     * as updated and accurate as possible.
+     */
 
-    for (var i = 0; i < buttonList.length; i++)
+    var totalprice = manufacturer(); //test line - this will be replaced
+
+    for (var i = 0; i < buttonList.length; i++) //for each different type of button
     {
+        //multiply the total by the coefficients read from the buttons
         totalprice *= readbuttons(buttonList[i], yes_no_list)
     }
 
-    var divobj = document.getElementById('totalPrice');
-    divobj.style.display='block';
-    divobj.innerHTML = "Total Price For the Cake $" + totalprice;
+    var divobj = document.getElementById('totalPrice'); //grab the totalPrice element
+    divobj.style.display='block'; //display the element
+    divobj.innerHTML = "Total Price For the Cake $" + totalprice; // set the text for the element
 }
 
