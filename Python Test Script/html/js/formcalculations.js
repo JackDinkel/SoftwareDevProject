@@ -135,6 +135,30 @@ function insciptionPrice()
 
 var buttonList = ["contract", "used", "insurance", "power", "water", "box"]
 
+/*
+ *************NOTES******************
+ *contract coefficient:
+ *  yes: 1
+ *  no: 0
+ *used coefficient:
+ *  yes: 1
+ *  no: full phone price - exit
+ *insurance coefficient:
+ *  yes: 1.5
+ *  no: 1
+ *power coefficient:
+ *  yes: 1
+ *  no: .25
+ *water coefficient:
+ *  yes: .7
+ *  no: 1
+ *box coefficient:
+ *  yes: add $5
+ *  no: 1
+ ************************************
+ */
+
+
 var yes_no_list = new Array();
     yes_no_list["yes"] = 1;
     yes_no_list["no"] = 0;
