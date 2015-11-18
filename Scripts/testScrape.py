@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.keys import Keys
 from bs4 import BeautifulSoup
-
+'''
 display = Display(visible=0, size=(1,1))
 display.start()
 
@@ -15,9 +15,30 @@ def retrieveSell(url):
 
 	soup = BeautifulSoup(htmlSource, 'html.parser')
 	stuff = soup.findAll('h3')
-	print stuff
+	print stuff[5].getText()[1:]
 	browser.quit()
+display.stop()
+'''
+
+def urlDecomposition(reqURL):
+	val = reqURL.split('/')
+	site = val[2]
+	brand = val[3]
+	model = val[4]
+	carrier = val[5]
+	capacity = val[6]
+	deviceID = val[7]
+	print site
+	print brand
+	print model
+	print carrier
+	print capacity
+	print deviceID
+
+
 aurl = "https://www.gazelle.com/iphone/iphone-6s-plus/at-t/iphone-6s-plus:-128gb-at-t/496035-gpid"
 burl = "https://www.gazelle.com/iphone/iphone-6s-plus/at-t/iphone-6s-plus-16gb-at-t/496033-gpid"
-retrieveSell(aurl)
-display.stop()
+urlDecomposition(aurl)
+#retrieveSell(aurl)
+#retrieveSell(burl)
+
