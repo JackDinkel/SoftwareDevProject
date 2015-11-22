@@ -3,10 +3,21 @@ from selenium.webdriver.common.keys import Keys
 from pyvirtualdisplay import Display
 from selenium import webdriver
 from bs4 import BeautifulSoup
+import datetime
 import requests
 import MySQLdb
 import urllib
 import sys
+
+
+
+###################################################################
+#Timestamp
+###################################################################
+def timestamp():
+	d = datetime.datetime.now()
+	#Timestamp name is year, month, day, hour, minute, second, microsecond in the following numeric setup 4,2,2,2,2,2,6
+	return str('{:04d}'.format(getattr(d, 'year')))+str('{:02d}'.format(getattr(d, 'month')))+str('{:02d}'.format(getattr(d, 'day')))+str('{:02d}'.format(getattr(d, 'hour')))+str('{:02d}'.format(getattr(d, 'minute')))+str('{:02d}'.format(getattr(d, 'second')))+str('{:06d}'.format(getattr(d, 'microsecond')))
 
 ###################################################################
 #Reference Scraper
@@ -39,6 +50,7 @@ def scrape_gazelle(iphoneModel, carrier, capacity):
 	links = url_scraper(url)
 	print links
 	'''
+	'''
 	url = "https://www.gazelle.com/iphone/iphone-6s-plus/at-t/iphone-6s-plus-16gb-at-t/496033-gpid"
 	r = requests.get(url)
 	#print r
@@ -50,6 +62,16 @@ def scrape_gazelle(iphoneModel, carrier, capacity):
 	#for tag in soup.findAll('span',{'data':'oldoffer'}):
 	for tag in soup.findAll('h3'):
 		print tag
+	'''
+	browser = webdriver.Firefox()
+        browser.get(url)
+        htmlSource = browser.page_source
+
+        soup = BeautifulSoup(htmlSource, 'html.parser')
+        stuff = soup.findAll('h3')
+        print stuff[5].getText()[1:]
+        browser.quit()
+
 ###################################################################
 #Swappa
 ###################################################################
