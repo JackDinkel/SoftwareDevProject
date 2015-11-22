@@ -1,4 +1,10 @@
+Development is currently on LAMP stack
+-------------------------------------------------------------------------------
 Python 2.7
 Python:
 	requests
-	beautifulsoup4
+	beautifulsoup4 <<< html parser
+	selenium <<< loads webpages in web browser agent to allow script execution
+	pyvirtualdisplay <<< needed to run headless mode
+python-mysqldb <<< python module to interface with mysql db's
+xvfb <<< for pyvirtualdisplay
