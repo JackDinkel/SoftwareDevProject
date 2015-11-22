@@ -5,12 +5,11 @@ from selenium.webdriver.common.keys import Keys
 from bs4 import BeautifulSoup
 import MySQLdb
 
-db= MySQLdb.connect("localhost","user","pass","db" )
+#db= MySQLdb.connect("localhost","user","pass","db" )
 # prepare a cursor object using cursor() method
-cursor = db.cursor()
+#cursor = db.cursor()
 
 
-'''
 display = Display(visible=0, size=(1,1))
 display.start()
 
@@ -24,7 +23,6 @@ def retrieveSell(url):
 	print stuff[5].getText()[1:]
 	browser.quit()
 display.stop()
-'''
 
 def urlDecomposition(reqURL):
 	val = reqURL.split('/')
@@ -55,7 +53,7 @@ def urlDecomposition(reqURL):
 
 aurl = "https://www.gazelle.com/iphone/iphone-6s-plus/at-t/iphone-6s-plus:-128gb-at-t/496035-gpid"
 burl = "https://www.gazelle.com/iphone/iphone-6s-plus/at-t/iphone-6s-plus-16gb-at-t/496033-gpid"
-urlDecomposition(aurl)
-#retrieveSell(aurl)
+#urlDecomposition(aurl)
+retrieveSell(aurl)
 #retrieveSell(burl)
-db.close()
+#db.close()
