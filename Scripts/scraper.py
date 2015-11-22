@@ -1,4 +1,9 @@
+from pyvirtualdisplay import Display
+from selenium import webdriver
+from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.common.keys import Keys
 from bs4 import BeautifulSoup
+import MySQLdb
 import requests
 import urllib
 
@@ -61,12 +66,45 @@ def scrape_usell():
         print links
 
 ###################################################################
+#URL Decomposition
+###################################################################
+def urlDecomposition(reqURL):
+        val = reqURL.split('/')
+        site = val[2]
+        brand = val[3]
+        model = val[4]
+        carrier = val[5]
+        capacity = val[6]
+        deviceID = val[7]
+        print site
+        print brand
+        print model
+        print carrier
+        print capacity
+        print deviceID
+
+
+###################################################################
 #Database Insertion
 ###################################################################
 #DB Table format
 #brand|model|capacity|carrier|condition|price|site|timestamp
 def insert_to_db(brand, model, capacity, carrier, condition, price, site, timestamp):
 	x = 0 #Place holder
+	db= MySQLdb.connect("localhost","user","pass","db" )
+	# prepare a cursor object using cursor() method
+	cursor = db.cursor()
+        sql = """INSERT INTO testers(brand, model, carrier, capacity, deviceid)
+                 VALUES ('iphone', '6s', 'att', '16gb', '34234')"""
+        try:
+           # Execute the SQL command
+           cursor.execute(sql)
+           # Commit your changes in the database
+           db.commit()
+        except:
+           # Rollback in case there is any error
+           db.rollback()
+	db.close()
 	
 ###################################################################
 #Main
