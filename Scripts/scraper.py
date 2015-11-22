@@ -1,11 +1,12 @@
-from pyvirtualdisplay import Display
-from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.keys import Keys
+from pyvirtualdisplay import Display
+from selenium import webdriver
 from bs4 import BeautifulSoup
-import MySQLdb
 import requests
+import MySQLdb
 import urllib
+import sys
 
 ###################################################################
 #Reference Scraper
@@ -66,6 +67,20 @@ def scrape_usell():
         print links
 
 ###################################################################
+#URL Sorting
+###################################################################
+def urlSort(reqURL):
+	if "gazelle" in reqURL:
+		#print "zomg %s contains gazelle", reqURL
+		urlDecomposition(reqURL)
+	elif "swappa" in reqURL:
+		print "zomg %s contains swappa", reqURL
+	elif "usell" in reqURL:
+		print "zomg %s contains usell", reqURL
+	else:
+		print "%s isn't valid for this scraper.", reqURL
+
+###################################################################
 #URL Decomposition
 ###################################################################
 def urlDecomposition(reqURL):
@@ -76,6 +91,7 @@ def urlDecomposition(reqURL):
         carrier = val[5]
         capacity = val[6]
         deviceID = val[7]
+	print reqURL
         print site
         print brand
         print model
@@ -83,6 +99,17 @@ def urlDecomposition(reqURL):
         print capacity
         print deviceID
 
+###################################################################
+#Command Line File Testing
+###################################################################
+def cmdLineTest():
+	numberOfFiles = len(sys.argv)
+	argFile = 1
+	while argFile < numberOfFiles:
+		f = open(sys.argv[argFile],'r')
+		for line in f:
+			urlSort(line)
+		argFile = argFile + 1
 
 ###################################################################
 #Database Insertion
@@ -90,7 +117,6 @@ def urlDecomposition(reqURL):
 #DB Table format
 #brand|model|capacity|carrier|condition|price|site|timestamp
 def insert_to_db(brand, model, capacity, carrier, condition, price, site, timestamp):
-	x = 0 #Place holder
 	db= MySQLdb.connect("localhost","user","pass","db" )
 	# prepare a cursor object using cursor() method
 	cursor = db.cursor()
@@ -110,7 +136,10 @@ def insert_to_db(brand, model, capacity, carrier, condition, price, site, timest
 #Main
 ###################################################################
 def main():
+	if len(sys.argv) > 1:
+		print "so you wanna do testing with files. eh?"
+		cmdLineTest()
 	#print "Which site will you scrape?"
-	scrape_gazelle("6s-plus", "at-t", "16gb")
+	#scrape_gazelle("6s-plus", "at-t", "16gb")
 	#scrape_swappa()
 main()
