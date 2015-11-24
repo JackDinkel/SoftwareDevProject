@@ -9,8 +9,9 @@ import MySQLdb
 import urllib
 import sys
 
-
-
+display = Display(visible=0, size=(1,1))
+display.start()
+browser = webdriver.Firefox()
 ###################################################################
 #Timestamp
 ###################################################################
@@ -23,6 +24,7 @@ def timestamp():
 #Reference Scraper
 ###################################################################
 '''
+#Requests+beautifulsoup based
 url = ""
 r = requests.get(url)
 data = r.text
@@ -42,36 +44,15 @@ for tag in soup.findAll(''):
 ###################################################################
 #Gazelle
 ###################################################################
-#Example url:
-#https://www.gazelle.com/iphone/iphone-6s-plus/at-t/iphone-6s-plus-16gb-at-t/496033-gpid
-def scrape_gazelle(iphoneModel, carrier, capacity):
-	'''
-	url = "http://buy.gazelle.com/buy/used/catalog/iphones"
-	links = url_scraper(url)
-	print links
-	'''
-	'''
-	url = "https://www.gazelle.com/iphone/iphone-6s-plus/at-t/iphone-6s-plus-16gb-at-t/496033-gpid"
-	r = requests.get(url)
-	#print r
-	data = r.text
-	#print data
-	soup = BeautifulSoup(data, "html.parser")
-	#print soup
-	#print iphoneModel, carrier, capacity
-	#for tag in soup.findAll('span',{'data':'oldoffer'}):
-	for tag in soup.findAll('h3'):
-		print tag
-	'''
-	browser = webdriver.Firefox()
-        browser.get(url)
+def scrape_gazelle(reqURL):
+        browser.get(reqURL)
         htmlSource = browser.page_source
-
+	scrape_timestamp = timestamp()
         soup = BeautifulSoup(htmlSource, 'html.parser')
-        stuff = soup.findAll('h3')
-        print stuff[5].getText()[1:]
-        browser.quit()
-
+        devicePrice = soup.findAll('h3')
+        print devicePrice[5].getText()[1:]
+	siteScrape = urlDecomposition(reqURL)
+	print siteScrape
 ###################################################################
 #Swappa
 ###################################################################
@@ -94,7 +75,7 @@ def scrape_usell():
 def urlSort(reqURL):
 	if "gazelle" in reqURL:
 		#print "zomg %s contains gazelle", reqURL
-		urlDecomposition(reqURL)
+		scrape_gazelle(reqURL)
 	elif "swappa" in reqURL:
 		print "zomg %s contains swappa", reqURL
 	elif "usell" in reqURL:
@@ -113,6 +94,7 @@ def urlDecomposition(reqURL):
         carrier = val[5]
         capacity = val[6]
         deviceID = val[7]
+	'''
 	print reqURL
         print site
         print brand
@@ -120,6 +102,8 @@ def urlDecomposition(reqURL):
         print carrier
         print capacity
         print deviceID
+	'''
+	return brand, model, capacity, carrier, site
 
 ###################################################################
 #Command Line File Testing
@@ -159,9 +143,10 @@ def insert_to_db(brand, model, capacity, carrier, condition, price, site, timest
 ###################################################################
 def main():
 	if len(sys.argv) > 1:
-		print "so you wanna do testing with files. eh?"
 		cmdLineTest()
 	#print "Which site will you scrape?"
 	#scrape_gazelle("6s-plus", "at-t", "16gb")
 	#scrape_swappa()
 main()
+browser.quit()
+display.stop()
