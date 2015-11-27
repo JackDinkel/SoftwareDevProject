@@ -8,3 +8,28 @@ Python:
 	pyvirtualdisplay <<< needed to run headless mode
 python-mysqldb <<< python module to interface with mysql db's
 xvfb <<< for pyvirtualdisplay
+
+Scraper
+-------------------------------------------------------------------------------
+DB access on the scraper requires 4 environment variables to be set
+
+DB_NAME
+DB_TABLE_NAME
+DB_USER_NAME
+DB_USER_PASSWORD
+
+If these values are not set, the scraper will fail to insert/update values on the database.
+
+To set these values, in the command line it can be done with the following example command
+	export DB_NAME = 'someDB'
+
+Database
+-------------------------------------------------------------------------------
+MySQL was the chosen database for this project.
+
+The database is setup as brand, model, capacity, carrier, item_condition, price, site, timestamp. All fields are varchar with the exception of price which is an integer.
+
+In order to setup a database with a table, use the following commands once logged into the mysql shell.
+	CREATE DATABASE someDatabaseName;
+	USE someDatabaseName;
+	CREATE TABLE someTableName(brand VARCHAR(255), model VARCHAR(255), capacity VARCHAR(255), carrier VARCHAR(255), item_condition VARCHAR(255), price INT(11), site VARCHAR(255), timestamp VARCHAR(255));

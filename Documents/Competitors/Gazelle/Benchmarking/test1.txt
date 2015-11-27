@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "scraper.py", line 14, in <module>
+    browser = webdriver.Firefox()
+  File "/usr/local/lib/python2.7/dist-packages/selenium/webdriver/firefox/webdriver.py", line 77, in __init__
+    self.binary, timeout),
+  File "/usr/local/lib/python2.7/dist-packages/selenium/webdriver/firefox/extension_connection.py", line 49, in __init__
+    self.binary.launch_browser(self.profile)
+  File "/usr/local/lib/python2.7/dist-packages/selenium/webdriver/firefox/firefox_binary.py", line 68, in launch_browser
+    self._wait_until_connectable()
+  File "/usr/local/lib/python2.7/dist-packages/selenium/webdriver/firefox/firefox_binary.py", line 103, in _wait_until_connectable
+    raise WebDriverException("Can't load the profile. Profile "
+selenium.common.exceptions.WebDriverException: Message: Can't load the profile. Profile Dir: %s If you specified a log_file in the FirefoxBinary constructor, check it for details.
+
+
+real	0m30.357s
+user	0m0.492s
+sys	0m0.420s
+

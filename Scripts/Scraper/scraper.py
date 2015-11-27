@@ -8,6 +8,12 @@ import requests
 import MySQLdb
 import urllib
 import sys
+import os
+
+dbName = os.environ.get('DB_NAME')
+dbUserName = os.environ.get('DB_USER_NAME')
+dbUserPassword = os.environ.get('DB_USER_PASSWORD')
+dbTableName = os.environ.get('DB_TABLE_NAME')
 
 display = Display(visible=0, size=(1,1))
 display.start()
@@ -50,9 +56,10 @@ def scrape_gazelle(reqURL):
 	scrape_timestamp = timestamp()
         soup = BeautifulSoup(htmlSource, 'html.parser')
         devicePrice = soup.findAll('h3')
-        print devicePrice[5].getText()[1:]
+        itemPrice = int(devicePrice[5].getText()[1:])
 	siteScrape = urlDecomposition(reqURL)
-	print siteScrape
+	insert_to_db(siteScrape[0],siteScrape[1],siteScrape[2],siteScrape[3],"good",itemPrice,siteScrape[4],scrape_timestamp)
+
 ###################################################################
 #Swappa
 ###################################################################
@@ -122,21 +129,27 @@ def cmdLineTest():
 ###################################################################
 #DB Table format
 #brand|model|capacity|carrier|condition|price|site|timestamp
-def insert_to_db(brand, model, capacity, carrier, condition, price, site, timestamp):
-	db= MySQLdb.connect("localhost","user","pass","db" )
+def insert_to_db(resBrand, resModel, resCapacity, resCarrier, resCondition, resPrice, resSite, resTimestamp):
+	db= MySQLdb.connect("localhost", dbUserName, dbUserPassword, dbName)
 	# prepare a cursor object using cursor() method
 	cursor = db.cursor()
-        sql = """INSERT INTO testers(brand, model, carrier, capacity, deviceid)
-                 VALUES ('iphone', '6s', 'att', '16gb', '34234')"""
+	sql = """INSERT INTO %s(brand, model, capacity, carrier, item_condition, price, site, timestamp) VALUES ('%s', '%s','%s','%s','%s','%i','%s','%s')"""%(dbTableName, resBrand, resModel, resCapacity, resCarrier, resCondition, resPrice, resSite, resTimestamp)
+	
+	print sql
         try:
+	   print "executing"
            # Execute the SQL command
            cursor.execute(sql)
+	   
            # Commit your changes in the database
+	   print "commiting"
            db.commit()
         except:
+	   print "rolling back"
            # Rollback in case there is any error
            db.rollback()
 	db.close()
+	#print resBrand, resModel, resCapacity, resCarrier, resCondition, resPrice, resSite, resTimestamp
 	
 ###################################################################
 #Main
@@ -147,6 +160,7 @@ def main():
 	#print "Which site will you scrape?"
 	#scrape_gazelle("6s-plus", "at-t", "16gb")
 	#scrape_swappa()
+	#print dbName, dbTableName, dbUserName, dbUserPassword
 main()
 browser.quit()
 display.stop()

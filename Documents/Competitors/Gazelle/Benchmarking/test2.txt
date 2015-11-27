@@ -1,0 +1,41 @@
+360
+('iphone', 'iphone-6s-plus', 'iphone-6s-plus-16gb-at-t', 'at-t', 'www.gazelle.com')
+370
+('iphone', 'iphone-6s-plus', 'iphone-6s-plus-64gb-at-t', 'at-t', 'www.gazelle.com')
+380
+('iphone', 'iphone-6s-plus', 'iphone-6s-plus:-128gb-at-t', 'at-t', 'www.gazelle.com')
+330
+('iphone', 'iphone-6s-plus', 'iphone-6s-plus-16gb-sprint', 'sprint', 'www.gazelle.com')
+340
+('iphone', 'iphone-6s-plus', 'iphone-6s-plus-64gb-sprint', 'sprint', 'www.gazelle.com')
+350
+('iphone', 'iphone-6s-plus', 'iphone-6s-plus:-128gb-sprint', 'sprint', 'www.gazelle.com')
+330
+('iphone', 'iphone-6s-plus', 'iphone-6s-plus-16gb-t-mobile', 't-mobile', 'www.gazelle.com')
+340
+('iphone', 'iphone-6s-plus', 'iphone-6s-plus-64gb-t-mobile', 't-mobile', 'www.gazelle.com')
+350
+('iphone', 'iphone-6s-plus', 'iphone-6s-plus:-128gb-t-mobile', 't-mobile', 'www.gazelle.com')
+370
+('iphone', 'iphone-6s-plus', 'iphone-6s-plus-16gb-verizon', 'verizon', 'www.gazelle.com')
+380
+('iphone', 'iphone-6s-plus', 'iphone-6s-plus-64gb-verizon', 'verizon', 'www.gazelle.com')
+390
+('iphone', 'iphone-6s-plus', 'iphone-6s-plus:-128gb-verizon', 'verizon', 'www.gazelle.com')
+380
+('iphone', 'iphone-6s-plus', 'iphone-6s-plus-16gb-unlocked', 'unlocked', 'www.gazelle.com')
+390
+('iphone', 'iphone-6s-plus', 'iphone-6s-plus-64gb-unlocked', 'unlocked', 'www.gazelle.com')
+400
+('iphone', 'iphone-6s-plus', 'iphone-6s-plus:-128gb-unlocked', 'unlocked', 'www.gazelle.com')
+250
+('iphone', 'iphone-6s-plus', 'iphone-6s-plus-16gb-other', 'other', 'www.gazelle.com')
+255
+('iphone', 'iphone-6s-plus', 'iphone-6s-plus-64gb-other', 'other', 'www.gazelle.com')
+260
+('iphone', 'iphone-6s-plus', 'iphone-6s-plus:-128gb-other', 'other', 'www.gazelle.com')
+
+real	0m57.284s
+user	0m40.072s
+sys	0m6.352s
+
