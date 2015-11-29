@@ -188,68 +188,82 @@ def main():
 	#decrement phoneworth based on the carrier coefficient
 	phoneWorth = phoneWorth * carrierCoefficient
 
-	contract() #ensure phone is not under contract
-	c = condition()
-	if c == False:
-		print "Your phone is worth $%s" % phoneWorth
-		sys.exit()
-	i = insurance()
-	#ask about damages
-	p = power()
-	wd = waterDamage()
-	sd = screenDamage()
-	butt = buttons()
-	f = frame()
-	b = box()
-	o = old()
+	#contract() #ensure phone is not under contract
+	#c = condition()
+	#if c == False:
+	#	print "Your phone is worth $%s" % phoneWorth
+	#	sys.exit()
+	#i = insurance()
+
+	print "What condition is your phone in?"
+	print "(E)xcellent"
+	print "(G)ood"
+	print "(P)oor"
+	conditionChecker = raw_input();
+
+	if conditionChecker == 'E':
+		phoneWorth = .8 * ((.88 * phoneWorth) - 5)
+
+	elif conditionChecker == 'G':
+		phoneWorth = .8 * (((.88 * phoneWorth) - 5) * .8)
+
+	else:
+		#ask about damages
+		p = power()
+		wd = waterDamage()
+		sd = screenDamage()
+		butt = buttons()
+		f = frame()
+		b = box()
+		o = old()
 	#angry birds
-	bird = birds()
+		bird = birds()
 
 	#account for insurance
-	if i:
-		phoneWorth += phoneWorth * .05
+		if i:
+			phoneWorth += phoneWorth * .05
 	#account for how old the phone is
-	if o > 24:
-		phoneWorth -= phoneWorth * .4
-	elif o > 12:
-		phoneWorth -= phoneWorth * .1
-	#account for whether phone powers on
-	if p == False:
-		phoneWorth -= phoneWorth * .75
-	#account for water damage
-	if wd:
-		phoneWorth -= phoneWorth * .3
-	#account for screen damage
-	if currentPhone == "Galaxy S5" or currentPhone == "Galaxy S4" or currentPhone == "Galaxy S3" or currentPhone == "Note 3" or currentPhone == "Note 2" or currentPhone == "LG G2" or currentPhone == "HTC One M7" or currentPhone == "HTC One M8":
-		if sd == 1:
-			phoneWorth -= phoneWorth * .6
-		elif sd == 2:
-			phoneWorth -= phoneWorth * .15
-	else:
-		if sd == 1:
+		if o > 24:
 			phoneWorth -= phoneWorth * .4
-		elif sd == 2:
-			phoneWorth -= phoneWorth * .15
+		elif o > 12:
+			phoneWorth -= phoneWorth * .1
+	#account for whether phone powers on
+		if p == False:
+			phoneWorth -= phoneWorth * .75
+	#account for water damage
+		if wd:
+			phoneWorth -= phoneWorth * .3
+	#account for screen damage
+		if currentPhone == "Galaxy S5" or currentPhone == "Galaxy S4" or currentPhone == "Galaxy S3" or currentPhone == "Note 3" or currentPhone == "Note 2" or currentPhone == "LG G2" or currentPhone == "HTC One M7" or currentPhone == "HTC One M8":
+			if sd == 1:
+				phoneWorth -= phoneWorth * .6
+			elif sd == 2:
+				phoneWorth -= phoneWorth * .15
+		else:
+			if sd == 1:
+				phoneWorth -= phoneWorth * .4
+			elif sd == 2:
+				phoneWorth -= phoneWorth * .15
 	#account for frame damage
-	if f == 1:
-		phoneWorth -= phoneWorth * .15
-	elif f == 2:
-		phoneWorth -= phoneWorth * .1
-	elif f == 3:
-		phoneWorth -= phoneWorth * .05
+		if f == 1:
+			phoneWorth -= phoneWorth * .15
+		elif f == 2:
+			phoneWorth -= phoneWorth * .1
+		elif f == 3:
+			phoneWorth -= phoneWorth * .05
 	#account for whether owner has box
-	if b:
-		phoneWorth += 5
+		if b:
+			phoneWorth += 5
 	#account for broken buttons
-	phoneWorth -= 5 * butt
+		phoneWorth -= 5 * butt
 	#account for whether phone has angry birds
-	if bird:
-		phoneWorth += 10
+		if bird:
+			phoneWorth += 10
 
 
-	if phoneWorth <= 10:
-		print "Sorry, we cannot purchase your phone at this time."
-		sys.exit()
+		if phoneWorth <= 10:
+			print "Sorry, we cannot purchase your phone at this time."
+			sys.exit()
 
 
 
