@@ -1,4 +1,6 @@
 Development is currently on LAMP stack
+On Ubuntu, make sure the following is installed if using pip
+libffi-dev libssl-dev python-dev
 -------------------------------------------------------------------------------
 Python 2.7
 Python:
