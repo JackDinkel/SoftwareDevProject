@@ -1,3 +1,15 @@
+'''
+This is the main file for the python test script
+
+This program is designed to take user input and
+calculate how much their phone is worth. At the very
+end, it spits out a price.
+
+All testing is done on this file
+
+All auto-documentation is done on this file
+'''
+
 import sys
 
 def findPhone(phoneList, i=0):
