@@ -205,7 +205,7 @@ def box(i=0):
 
 	Returns True if they have the box, False if they don't.
 	'''
-	
+
 	if not i:
 		i = raw_input("Do you have the original box for your phone? (y)es or (n)o. ")
 	if i == "y":
@@ -216,12 +216,26 @@ def box(i=0):
 		return False
 
 def old(i=0):
+	'''
+	Asks the user how many months they have had their phone.
+	Takes user input using the terminal and parses it.
+
+	Returns the number of years as an integer
+	'''
+
 	if not i:
 		i = int(raw_input("How many months have you had your phone? "))
 	print "You have had your phone for %d months" % i
 	return i
 
 def condition(i=0):
+	'''
+	Asks the user whether their phone is used.
+	Takes user input using the terminal and parses it.
+
+	Returns True if the phone is used, False if it is not.
+	'''
+
 	if not i:
 		i = raw_input("Is your phone used? (y)es or (n)o. ")
 	if i == "y":
@@ -232,6 +246,14 @@ def condition(i=0):
 		return False
 
 def build_phoneDic():
+	'''
+	Builds the phone dictionary, stored in the variable phoneDic.
+	This function reads in the file "phone_dictionary" and parses
+	it. It then stores the data in the file into the dictionary.
+
+	THIS FUNCTION IS DEPRECATED AND SHOULD BE HANDLED BY A DATABASE
+	'''
+
 	phoneDic = {}
 	f = open("phone_dictionary")
 	for line in f.readlines():
@@ -245,6 +267,14 @@ def build_phoneDic():
 	return phoneDic
 
 def build_carrierDic():
+	'''
+	Builds the carrier dictionary, stored in the variable carrierDic.
+	This function reads in the file "carrier" and parses
+	it. It then stores the data in the file into the dictionary.
+
+	THIS FUNCTION IS DEPRECATED AND SHOULD BE HANDLED BY A DATABASE
+	'''
+
 	carrierDic = {}
 	c = open("carrier")
 	for line in c.readlines():
@@ -258,6 +288,18 @@ def build_carrierDic():
 	return carrierDic
 
 def main():
+	'''
+	This is the main function for the python test script
+
+	This program is designed to take user input and
+	calculate how much their phone is worth. At the very
+	end, it spits out a price.
+
+	It works by calling several different functions which
+	all ask different questions.
+	It then calculates the final price.
+	'''
+
 	#build phone dictionary using file "phone_dictionary"
 	phoneDic = build_phoneDic()
 
