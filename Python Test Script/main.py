@@ -1,3 +1,6 @@
+import sys
+import pydoc
+
 '''
 This is the main file for the python test script
 
@@ -7,17 +10,18 @@ end, it spits out a price.
 
 All testing is done on this file
 
-All auto-documentation is done on this file
+All auto-documentation is done on this file using pydoc
 '''
-
-import sys
 
 def findPhone(phoneList, i=0):
 	'''
-		uses phones in phoneDic to ask the user which phone they have
-		takes the list of phones(phoneDic.keys()) as input
-		returns the user's phone
+		Uses phones in phoneDic to ask the user which phone they have.
+		Takes user input using the terminal and parses it.
+
+		Takes the list of phones(phoneDic.keys()) as input.
+		Returns the user's phone.
 	'''
+
 	x = 1
 	for phone in phoneList:
 		print "%d. %s" % (x, phone)
@@ -31,10 +35,13 @@ def findPhone(phoneList, i=0):
 
 def findCarrier(carrierList, i=0):
 	'''
-		uses carriers in carrierDic to ask the user which carrier they have
-		takes the list of carriers(carrierDic.keys()) as input
-		returns the user's carrier
+		Uses carriers in carrierDic to ask the user which carrier they have.
+		Takes user input using the terminal and parses it.
+
+		Takes the list of carriers(carrierDic.keys()) as input.
+		Returns the user's carrier.
 	'''
+
 	#print carrierList
 	x = 1
 	for carrier in carrierList:
@@ -49,6 +56,12 @@ def findCarrier(carrierList, i=0):
 
 
 def power(i=0):
+	'''
+	Asks the user whether their phone can power on.
+	Takes user input using the terminal and parses it.
+
+	Returns True if it can or False if it can't.
+	'''
 	if not i:
 		i = raw_input("Does your phone turn on? (y)es or (n)o. ")
 	if i == "y":
@@ -60,6 +73,16 @@ def power(i=0):
 
 
 def screenDamage(i=0):
+	'''
+	Asks the user to rate the condition of their screen from 1-3
+		3: flawless
+		2: scratched
+		1: cracked
+	Takes user input using the terminal and parses it.
+
+	Returns the number 1, 2, or 3.
+	'''
+
 	if not i:
 		i = int(raw_input("From 1-3, please rate the condition of your screen, 3 being flawless, 2 being scratched, 1 being cracked: "))
 	if i == 1:
@@ -71,6 +94,13 @@ def screenDamage(i=0):
 	return i
 
 def waterDamage(i=0):
+	'''
+	Asks the user if their phone has water damage.
+	Takes user input using the terminal and parses it.
+
+	Returns True if it is damaged and False if it is not.
+	'''
+
 	if not i:
 		i = raw_input("Does your phone have water damage? (y)es or (n)o. ")
 	if i == "y":
@@ -81,12 +111,26 @@ def waterDamage(i=0):
 		return False
 
 def buttons(i=0):
+	'''
+	Asks the user how many broken buttons their phone has.
+	Takes user input using the terminal and parses it.
+
+	Returns the number of broken buttons.
+	'''
+
 	if not i:
 		i = int(raw_input("How many broken buttons does your phone have? "))
 	print "You have %d broken buttons" % i
 	return i
 
 def birds(i=0):
+	'''
+	Asks the user if their phone has the Angry Birds app installed
+	Takes user input using the terminal and parses it.
+
+	Returns True if it is installed and False if it is not.
+	'''
+
 	if not i:
 		i = raw_input("Does your phone have Angry Birds? (y)es or (n)o. ")
 	if i == "y":
@@ -97,6 +141,14 @@ def birds(i=0):
 		return False
 
 def contract(i=0):
+	'''
+	Asks the user if their phone is under contract.
+	Takes user input using the terminal and parses it.
+
+	Exits the program if the phone is under contract.
+	Returns nothing.
+	'''
+
 	if not i:
 		i = raw_input("Is this phone under contract? (y)es or (n)o. ")
 	if i == "y":
@@ -106,6 +158,13 @@ def contract(i=0):
 		print "Your phone is not under contract."
 
 def insurance(i=0):
+	'''
+	Asks the user if their phone is covered by insurance.
+	Takes user input using the terminal and parses it.
+
+	Returns True if it is, and False if it is not.
+	'''
+
 	if not i:
 		i = raw_input("Is your phone covered by insurance? (y)es or (n)o. ")
 	if i == "y":
@@ -116,8 +175,19 @@ def insurance(i=0):
 		return False
 
 def frame(i=0):
+	'''
+	Asks the user to rate the condition of their frame
+		4: flawless
+		3: slightly damaged
+		2: moderately damaged
+		1: severely damaged
+	Takes user input using the terminal and parses it.
+
+	Returns the number 1, 2, 3, or 4.
+	'''
+
 	if not i:
-		i = int(raw_input("From 1-4, please rate the condition of your frame, 4 being flawless, 3 being slightly damaged, 2 being moderately damaged, 1 being severly damaged: "))
+		i = int(raw_input("From 1-4, please rate the condition of your frame, 4 being flawless, 3 being slightly damaged, 2 being moderately damaged, 1 being severely damaged: "))
 	if i == 1:
 		print "Your screen is severely damaged."
 	elif i == 2:
@@ -129,6 +199,13 @@ def frame(i=0):
 	return i
 
 def box(i=0):
+	'''
+	Asks the user whether they have the original box for their phone.
+	Takes user input using the terminal and parses it.
+
+	Returns True if they have the box, False if they don't.
+	'''
+	
 	if not i:
 		i = raw_input("Do you have the original box for your phone? (y)es or (n)o. ")
 	if i == "y":
