@@ -4,7 +4,7 @@
 	text-align:left;
 	margin-top:8px;
 	padding:5px;
-	background:#fff;
+	background:#000;
 	font-family:AvenirLTStd, Arial, Helvetica, sans-serif;
 	font-size:13px;    
 	line-height:16px;
@@ -74,7 +74,7 @@
 #wrap div, #totalPrice{
 	padding:10px;
 	font-weight:bold;
-	background-color:#ff0;
+	background-color:#48D1CC;
 }
 
 #wrap label.radiolabel{
