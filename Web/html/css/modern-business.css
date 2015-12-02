@@ -73,6 +73,9 @@ footer {
     margin: 50px 0;
 }
 
+footer ul li {
+	list-style-type: none;
+}
 /* Responsive Styles */
 
 @media(max-width:991px) {
@@ -91,3 +94,4 @@ footer {
         height: 70%;
     }
 }
+
