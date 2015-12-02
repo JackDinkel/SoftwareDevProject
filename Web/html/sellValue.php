@@ -1,7 +1,9 @@
 <?php include 'included/header.php'; ?>
-	<!-- Page Content -->
-	<div class="container">
 
-	</div>
-	<!-- /.container -->
+	<section>
+
+
+	</section>
+
+
 <?php include 'included/footer.php'; ?>
