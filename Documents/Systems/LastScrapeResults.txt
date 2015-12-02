@@ -1,0 +1,55 @@
+ubuntu@ip-172-31-17-61:~/SoftwareDevProject/Scripts/Scraper$ python scraper.py iphone6splus.txt 
+INSERT INTO selling(brand, model, capacity, carrier, item_condition, price, site, timestamp) VALUES ('iphone', 'iphone-6s-plus','iphone-6s-plus-16gb-at-t','at-t','good','360','www.gazelle.com','20151202183546741708')
+executing
+commiting
+INSERT INTO selling(brand, model, capacity, carrier, item_condition, price, site, timestamp) VALUES ('iphone', 'iphone-6s-plus','iphone-6s-plus-64gb-at-t','at-t','good','370','www.gazelle.com','20151202183549544518')
+executing
+commiting
+INSERT INTO selling(brand, model, capacity, carrier, item_condition, price, site, timestamp) VALUES ('iphone', 'iphone-6s-plus','iphone-6s-plus:-128gb-at-t','at-t','good','380','www.gazelle.com','20151202183552026326')
+executing
+commiting
+INSERT INTO selling(brand, model, capacity, carrier, item_condition, price, site, timestamp) VALUES ('iphone', 'iphone-6s-plus','iphone-6s-plus-16gb-sprint','sprint','good','330','www.gazelle.com','20151202183555045371')
+executing
+commiting
+INSERT INTO selling(brand, model, capacity, carrier, item_condition, price, site, timestamp) VALUES ('iphone', 'iphone-6s-plus','iphone-6s-plus-64gb-sprint','sprint','good','340','www.gazelle.com','20151202183558052284')
+executing
+commiting
+INSERT INTO selling(brand, model, capacity, carrier, item_condition, price, site, timestamp) VALUES ('iphone', 'iphone-6s-plus','iphone-6s-plus:-128gb-sprint','sprint','good','350','www.gazelle.com','20151202183600954070')
+executing
+commiting
+INSERT INTO selling(brand, model, capacity, carrier, item_condition, price, site, timestamp) VALUES ('iphone', 'iphone-6s-plus','iphone-6s-plus-16gb-t-mobile','t-mobile','good','330','www.gazelle.com','20151202183604156276')
+executing
+commiting
+INSERT INTO selling(brand, model, capacity, carrier, item_condition, price, site, timestamp) VALUES ('iphone', 'iphone-6s-plus','iphone-6s-plus-64gb-t-mobile','t-mobile','good','340','www.gazelle.com','20151202183607673891')
+executing
+commiting
+INSERT INTO selling(brand, model, capacity, carrier, item_condition, price, site, timestamp) VALUES ('iphone', 'iphone-6s-plus','iphone-6s-plus:-128gb-t-mobile','t-mobile','good','350','www.gazelle.com','20151202183610431033')
+executing
+commiting
+INSERT INTO selling(brand, model, capacity, carrier, item_condition, price, site, timestamp) VALUES ('iphone', 'iphone-6s-plus','iphone-6s-plus-16gb-verizon','verizon','good','370','www.gazelle.com','20151202183612645600')
+executing
+commiting
+INSERT INTO selling(brand, model, capacity, carrier, item_condition, price, site, timestamp) VALUES ('iphone', 'iphone-6s-plus','iphone-6s-plus-64gb-verizon','verizon','good','380','www.gazelle.com','20151202183615296763')
+executing
+commiting
+INSERT INTO selling(brand, model, capacity, carrier, item_condition, price, site, timestamp) VALUES ('iphone', 'iphone-6s-plus','iphone-6s-plus:-128gb-verizon','verizon','good','390','www.gazelle.com','20151202183617967332')
+executing
+commiting
+INSERT INTO selling(brand, model, capacity, carrier, item_condition, price, site, timestamp) VALUES ('iphone', 'iphone-6s-plus','iphone-6s-plus-16gb-unlocked','unlocked','good','380','www.gazelle.com','20151202183621042144')
+executing
+commiting
+INSERT INTO selling(brand, model, capacity, carrier, item_condition, price, site, timestamp) VALUES ('iphone', 'iphone-6s-plus','iphone-6s-plus-64gb-unlocked','unlocked','good','390','www.gazelle.com','20151202183623418228')
+executing
+commiting
+Traceback (most recent call last):
+  File "scraper.py", line 164, in <module>
+    main()
+  File "scraper.py", line 159, in main
+    cmdLineTest()
+  File "scraper.py", line 124, in cmdLineTest
+    urlSort(line)
+  File "scraper.py", line 85, in urlSort
+    scrape_gazelle(reqURL)
+  File "scraper.py", line 59, in scrape_gazelle
+    itemPrice = int(devicePrice[5].getText()[1:])
+ValueError: invalid literal for int() with base 10: ''
