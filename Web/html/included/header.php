@@ -16,6 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
+    <link href="css/shop-homepage.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
