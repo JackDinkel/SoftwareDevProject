@@ -1,3 +1,4 @@
+	<hr>
         <!-- Footer -->
         <footer>
 		<div class="row">
@@ -5,7 +6,7 @@
 				<ul>
 					<li>Logo</li>
 					<li>Social Media</li>
-					<li>Copyright &copy; BuyBack Revolution 2015</li>
+					<li>&copy; BuyBack Revolution 2015</li>
 				</ul>
 			</div>
 
