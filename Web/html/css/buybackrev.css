@@ -1,57 +1,11 @@
-/* CSS reset */
-*, *:before,*:after{
-        margin: 0;
-        padding: 0;
-}
-
-
-
 .centerme{
         text-align: center;
-}
-.container {
-        width: 960px;
-        margin: 0 auto;
 }
 
 .hide{
         display: none;
 }
 
-nav{
-
-}
-
-nav ul li{
-	display: inline-block;
-}
-
-header{
-
-}
- 
-footer{
-	text-align: left;
-}
-
-a{
-	text-decoration: none;
-}
-
-a.button {
-	-webkit-appearance: button;
-	-moz-appearance: button;
-	appearance: button;
-
-	text-decoration: none;
-	color: initial;
-}
-
-
-h1 {
-	text-align: center;
-}
-/*
 .floatLeft{
 	float: left;
 }
@@ -59,7 +13,7 @@ h1 {
 .floatRight{
 	float: right;
 }
-*/
+
 .sectionTop{
 	background: gray;
 	margin: 0 auto;
