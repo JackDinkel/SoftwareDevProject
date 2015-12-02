@@ -12,7 +12,7 @@
         <!-- Marketing Icons Section -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">
+                <h1 class="page-header centerme">
                     Welcome to the BuyBack Advantage
                 </h1>
             </div>
@@ -21,13 +21,13 @@
 
 	<div class="row">
 		<div class="col-lg-4">
-			<p>30-Day Price Guarantee</p>
+			<p class="centerme">30-Day Price Guarantee</p>
 		</div>
 		<div class="col-lg-4">
-			<p>Best Price Guarantee</p>
+			<p class="centerme">Best Price Guarantee</p>
 		</div>
 		<div class="col-lg-4">
-			<p>Quick Payment</p>
+			<p class="centerme">Quick Payment</p>
 		</div>
 	</div>
 	
@@ -35,11 +35,12 @@
         <!-- /.row -->
 	<div class="row">
 		<div class="col-lg-12">
-			<h2 class="col-lg-12">See what you can get for your <a href="sellValue.php">device</a></h2>
+			<h2 class="centerme">See what you can get for your <a href="sellValue.php">device</a></h2>
 		</div>
 	</div>
 
 	<hr>
+
         <!-- Portfolio Section -->
         <div class="row">
             <div class="col-lg-12">
