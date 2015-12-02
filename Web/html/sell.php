@@ -25,7 +25,7 @@
 		<div class="row">
 			<div class="col-lg-4">
 				<h3 class="centerme">
-					Answer survey about device.
+					Answer survey about your device.
 				</h3>
 			</div>
                         <div class="col-lg-4">
@@ -79,7 +79,7 @@
 		</div>
 
 		<div class="row">
-			<p>No worries! Fill out this <a href="sellValue.php">survey</a> to see if your device is still eligible to sell</p>
+			<p>No worries! Fill out this <a href="sellValue.php">survey</a> to see if your device is still eligible to sell.</p>
 		</div>
 	</div>
 	<!-- /.container -->

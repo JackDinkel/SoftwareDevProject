@@ -1,12 +1,16 @@
 <?php include 'included/header.php'; ?>
 	<div class="container">
+		<div class="row">
+			<h1 class="page-header">
+				Find Out What Your Device is Worth!
+			</h1>
+		</div>
 		<form action="" id="form" onsubmit="return false;">
-			<div>
 			    <div class="cont_order">
 			       <fieldset>
 				<legend>Select your phone!</legend>
-
 				<label >Select your phone manufacturer</label>
+				<br>
 				<label class='radiolabel'><input type="radio"  name="manufacturer" value="Samsung" onclick="calculateTotal()" />Samsung</label><br/>
 				<label class='radiolabel'><input type="radio"  name="manufacturer" value="LG" onclick="calculateTotal()" />LG</label><br/>
 				<label class='radiolabel'><input type="radio"  name="manufacturer" value="HTC" onclick="calculateTotal()" />HTC</label><br/>
@@ -64,36 +68,42 @@
 				<br/>
 
 				<label >Is your phone under contract?</label>
+				<br>
 				<label class='radiolabel'><input type="radio"  name="contract" value="yes" onclick="calculateTotal()" />yes</label><br/>
 				<label class='radiolabel'><input type="radio"  name="contract" value="no" onclick="calculateTotal()" />no</label><br/>
 
 				<br/>
 
 				<label >Is your phone used?</label>
+				<br>
 				<label class='radiolabel'><input type="radio"  name="used" value="yes" onclick="calculateTotal()" />yes</label><br/>
 				<label class='radiolabel'><input type="radio"  name="used" value="no" onclick="calculateTotal()" />no</label><br/>
 
 				<br/>
 
 				<label >Is your phone covered by insurance?</label>
+				<br>
 				<label class='radiolabel'><input type="radio"  name="insurance" value="yes" onclick="calculateTotal()" />yes</label><br/>
 				<label class='radiolabel'><input type="radio"  name="insurance" value="no" onclick="calculateTotal()" />no</label><br/>
 
 				<br/>
 
 				<label >Does your phone power on?</label>
+				<br>
 				<label class='radiolabel'><input type="radio"  name="power" value="yes" onclick="calculateTotal()" />yes</label><br/>
 				<label class='radiolabel'><input type="radio"  name="power" value="no" onclick="calculateTotal()" />no</label><br/>
 
 				<br/>
 
 				<label >Does your phone have water damage?</label>
+				<br>
 				<label class='radiolabel'><input type="radio"  name="water" value="yes" onclick="calculateTotal()" />yes</label><br/>
 				<label class='radiolabel'><input type="radio"  name="water" value="no" onclick="calculateTotal()" />no</label><br/>
 
 				<br/>
 
 				<label >What is the condition of your screen?</label>
+				<br>
 				<label class='radiolabel'><input type="radio"  name="cracked" value="cracked" onclick="calculateTotal()" />cracked</label><br/>
 				<label class='radiolabel'><input type="radio"  name="scratched" value="scratched" onclick="calculateTotal()" />scratched</label><br/>
 				<label class='radiolabel'><input type="radio"  name="flawless" value="flawless" onclick="calculateTotal()" />flawless</label><br/>
@@ -101,19 +111,21 @@
 				<br/>
 
 				<label >How many broken buttons does your phone have?</label>
+				<br>
 				<input type="text" id="buttons" name="buttons" onclick="calculateTotal()" /><br/>
 
 				<br/>
 
 				<label >What is the condition of your phone's frame</label>
+				<br>
 				<label class='radiolabel'><input type="radio"  name="cracked" value="severely damaged" onclick="calculateTotal()" />cracked</label><br/>
-				<label class='radiolabel'><input type="radio"  name="scratched" value="moderately damaged" onclick="calculateTotal()" />scratched</label><br/>
 				<label class='radiolabel'><input type="radio"  name="scratched" value="slightly damaged" onclick="calculateTotal()" />scratched</label><br/>
 				<label class='radiolabel'><input type="radio"  name="flawless" value="flawless" onclick="calculateTotal()" />flawless</label><br/>
 
 				<br/>
 
 				<label >Do you have your phone's original box?</label>
+				<br>
 				<label class='radiolabel'><input type="radio"  name="box" value="yes" onclick="calculateTotal()" />yes</label><br/>
 				<label class='radiolabel'><input type="radio"  name="box" value="no" onclick="calculateTotal()" />no</label><br/>
 
@@ -142,4 +154,5 @@
 			</div>  
 		</form>
 	</div>
+	<script type="text/javascript" src="js/formcalculations.js"></script>
 <?php include 'included/footer.php'; ?>
