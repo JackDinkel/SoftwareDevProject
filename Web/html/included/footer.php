@@ -4,25 +4,25 @@
 		<div class="row">
 			<div class="col-lg-4">
 				<ul>
-					<li>Logo</li>
-					<li>Social Media</li>
+					<li><a href="index.php">Logo</a></li>
+					<li><a href="#">Social Media</a></li>
 					<li>&copy; BuyBack Revolution 2015</li>
 				</ul>
 			</div>
 
 			<div class="col-lg-4">
 				<ul>
-					<li>Popular Searches</li>
-					<li>Press</li>
-					<li>Legal</li>
+					<li><a href="#">Popular Searches</a></li>
+					<li><a href="#">Press</a></li>
+					<li><a href="#">Legal</a></li>
 				</ul>
 			</div>
 
 			<div class="col-lg-4">
 				<ul>
-					<li>About Us</li>
-					<li>Contact</li>
-					<li>Support</li>
+					<li><a href="about.php">About Us</a></li>
+					<li><a href="contact.php">Contact</a></li>
+					<li><a href="#">Support</a></li>
 				</ul>
 			</div>
 		</div>

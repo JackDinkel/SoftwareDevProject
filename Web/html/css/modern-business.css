@@ -76,6 +76,10 @@ footer {
 footer ul li {
 	list-style-type: none;
 }
+
+footer ul li a {
+	text-decoration: none;
+}
 /* Responsive Styles */
 
 @media(max-width:991px) {
