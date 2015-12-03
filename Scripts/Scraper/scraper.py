@@ -7,6 +7,7 @@ import datetime
 import requests
 import MySQLdb
 import urllib
+import math
 import sys
 import os
 
@@ -139,7 +140,7 @@ def insert_to_db(resBrand, resModel, resCapacity, resCarrier, resCondition, resP
 	# prepare a cursor object using cursor() method
 	cursor = db.cursor()
 	try:
-		math.isnan(float(resPrice))
+		math.isnan(float(int(resPrice)))
 	except:
 		resPrice=-1
 	sql = """INSERT INTO %s(brand, model, capacity, carrier, item_condition, price, site, timestamp) VALUES ('%s', '%s','%s','%s','%s','%i','%s','%s')"""%(dbTableName, resBrand, resModel, resCapacity, resCarrier, resCondition, resPrice, resSite, resTimestamp)
