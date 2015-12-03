@@ -6,7 +6,7 @@
 
 			<div class="col-lg-8">
 				<ul>
-					<li><a href="#">Buy</a></li>
+					<li><a href="buy.php">Buy</a></li>
 					<li><a href="sell.php">Sell</a></li>
 					<li><a href="about.php">About Us</a></li>
 					<li><a href="contact.php">Contact</a></li>
