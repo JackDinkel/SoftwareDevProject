@@ -9,13 +9,6 @@
 			    <div class="cont_order">
 			       <fieldset>
 				<legend>Select your phone!</legend>
-				<label >Select your phone manufacturer</label>
-				<br>
-				<label class='radiolabel'><input type="radio"  name="manufacturer" value="Samsung" onclick="calculateTotal()" />Samsung</label><br/>
-				<label class='radiolabel'><input type="radio"  name="manufacturer" value="LG" onclick="calculateTotal()" />LG</label><br/>
-				<label class='radiolabel'><input type="radio"  name="manufacturer" value="HTC" onclick="calculateTotal()" />HTC</label><br/>
-				<label class='radiolabel'><input type="radio"  name="manufacturer" value="Apple" onclick="calculateTotal()" />Apple</label><br/>
-
 				<br/>
 
 				<label >Select your phone</label>
@@ -59,61 +52,10 @@
 				<option value="Sprint">Sprint</option>
 				<option value="T-Mobile">T-Mobile</option>
 				<option value="Verizon">Verizon</option>
-				<option value="Cricket">Cricket</option>
-				<option value="Virgin Mobile">Virgin Mobile</option>
 				<option value="Unbranded/Other">Unbranded/Other</option>
 			       </select>
 
 				<br/>
-				<br/>
-
-				<label >Is your phone under contract?</label>
-				<br>
-				<label class='radiolabel'><input type="radio"  name="contract" value="yes" onclick="calculateTotal()" />yes</label><br/>
-				<label class='radiolabel'><input type="radio"  name="contract" value="no" onclick="calculateTotal()" />no</label><br/>
-
-				<br/>
-
-				<label >Is your phone used?</label>
-				<br>
-				<label class='radiolabel'><input type="radio"  name="used" value="yes" onclick="calculateTotal()" />yes</label><br/>
-				<label class='radiolabel'><input type="radio"  name="used" value="no" onclick="calculateTotal()" />no</label><br/>
-
-				<br/>
-
-				<label >Is your phone covered by insurance?</label>
-				<br>
-				<label class='radiolabel'><input type="radio"  name="insurance" value="yes" onclick="calculateTotal()" />yes</label><br/>
-				<label class='radiolabel'><input type="radio"  name="insurance" value="no" onclick="calculateTotal()" />no</label><br/>
-
-				<br/>
-
-				<label >Does your phone power on?</label>
-				<br>
-				<label class='radiolabel'><input type="radio"  name="power" value="yes" onclick="calculateTotal()" />yes</label><br/>
-				<label class='radiolabel'><input type="radio"  name="power" value="no" onclick="calculateTotal()" />no</label><br/>
-
-				<br/>
-
-				<label >Does your phone have water damage?</label>
-				<br>
-				<label class='radiolabel'><input type="radio"  name="water" value="yes" onclick="calculateTotal()" />yes</label><br/>
-				<label class='radiolabel'><input type="radio"  name="water" value="no" onclick="calculateTotal()" />no</label><br/>
-
-				<br/>
-
-				<label >What is the condition of your screen?</label>
-				<br>
-				<label class='radiolabel'><input type="radio"  name="cracked" value="cracked" onclick="calculateTotal()" />cracked</label><br/>
-				<label class='radiolabel'><input type="radio"  name="scratched" value="scratched" onclick="calculateTotal()" />scratched</label><br/>
-				<label class='radiolabel'><input type="radio"  name="flawless" value="flawless" onclick="calculateTotal()" />flawless</label><br/>
-
-				<br/>
-
-				<label >How many broken buttons does your phone have?</label>
-				<br>
-				<input type="text" id="buttons" name="buttons" onclick="calculateTotal()" /><br/>
-
 				<br/>
 
 				<label >What is the condition of your phone's frame</label>
@@ -138,18 +80,7 @@
 				
 				</fieldset>
 			    </div>
-			    
-				<div class="cont_details">
-				<fieldset>
-				<legend>Contact Details</legend>
-				<label for='name'>Name</label>
-				<input type="text" id="name" name='name' />
-				<br/>
-				<label for='email'>Email Address</label>
-				<input type="text" id="address" name='address' />
-				<br/>
-				</fieldset>
-			    </div>
+
 			    <input type='submit' id='submit' value='Submit' onclick="calculateTotal()" />
 			</div>  
 		</form>
