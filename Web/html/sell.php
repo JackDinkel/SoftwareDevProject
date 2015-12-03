@@ -9,9 +9,11 @@
 
 		<div class="row">
                         <div class="col-lg-6">
+				<img class="centerme" src="img/iPhone.jpg">
 				<p class="centerme">iPhone</p>
                         </div>
                         <div class="col-lg-6">
+				<img class="centerme" src="img/Android.jpg">
 				<p class="centerme">Android</p>
                         </div>
 		</div>
