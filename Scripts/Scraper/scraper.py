@@ -133,6 +133,10 @@ def insert_to_db(resBrand, resModel, resCapacity, resCarrier, resCondition, resP
 	db= MySQLdb.connect("localhost", dbUserName, dbUserPassword, dbName)
 	# prepare a cursor object using cursor() method
 	cursor = db.cursor()
+	try:
+		math.isnan(float(resPrice))
+	except:
+		resPrice=-1
 	sql = """INSERT INTO %s(brand, model, capacity, carrier, item_condition, price, site, timestamp) VALUES ('%s', '%s','%s','%s','%s','%i','%s','%s')"""%(dbTableName, resBrand, resModel, resCapacity, resCarrier, resCondition, resPrice, resSite, resTimestamp)
 	
 	print sql

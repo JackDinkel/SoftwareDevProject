@@ -8,7 +8,7 @@
 			<div class="col-lg-4">
 				<ul>
 					<li><a href="#">Buy</a></li>
-					<li><a href="#">Sell</a></li>
+					<li><a href="sell.php">Sell</a></li>
 				</ul>
 			</div>
 
