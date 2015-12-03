@@ -3,6 +3,7 @@
             <div class="col-md-2">
                 <p class="lead">Brands</p>
                 <div class="list-group">
+                    <a href="#" class="list-group-item">All</a>
                     <a href="#" class="list-group-item">iPhone</a>
                     <a href="#" class="list-group-item">Android</a>
                     <a href="#" class="list-group-item">Windows Phone</a>
@@ -54,9 +55,9 @@
                             <img src="http://placehold.it/320x150" alt="">
                             <div class="caption">
                                 <h4 class="pull-right">$24.99</h4>
-                                <h4><a href="#">First Product</a>
+                                <h4><a href="buyItem.php">First Product</a>
                                 </h4>
-                                <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
+                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                             <div class="ratings">
                                 <p class="pull-right">15 reviews</p>
@@ -76,7 +77,7 @@
                             <img src="http://placehold.it/320x150" alt="">
                             <div class="caption">
                                 <h4 class="pull-right">$64.99</h4>
-                                <h4><a href="#">Second Product</a>
+                                <h4><a href="buyItem.php">Second Product</a>
                                 </h4>
                                 <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
@@ -98,7 +99,7 @@
                             <img src="http://placehold.it/320x150" alt="">
                             <div class="caption">
                                 <h4 class="pull-right">$74.99</h4>
-                                <h4><a href="#">Third Product</a>
+                                <h4><a href="buyItem.php">Third Product</a>
                                 </h4>
                                 <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
@@ -120,7 +121,7 @@
                             <img src="http://placehold.it/320x150" alt="">
                             <div class="caption">
                                 <h4 class="pull-right">$84.99</h4>
-                                <h4><a href="#">Fourth Product</a>
+                                <h4><a href="buyItem.php">Fourth Product</a>
                                 </h4>
                                 <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
@@ -142,7 +143,7 @@
                             <img src="http://placehold.it/320x150" alt="">
                             <div class="caption">
                                 <h4 class="pull-right">$94.99</h4>
-                                <h4><a href="#">Fifth Product</a>
+                                <h4><a href="buyItem.php">Fifth Product</a>
                                 </h4>
                                 <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
@@ -164,7 +165,7 @@
                             <img src="http://placehold.it/320x150" alt="">
                             <div class="caption">
                                 <h4 class="pull-right">$94.99</h4>
-                                <h4><a href="#">Sixth Product</a>
+                                <h4><a href="buyItem.php">Sixth Product</a>
                                 </h4>
                                 <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
