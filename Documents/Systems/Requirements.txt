@@ -10,6 +10,7 @@ Python:
 	pyvirtualdisplay <<< needed to run headless mode
 python-mysqldb <<< python module to interface with mysql db's
 xvfb <<< for pyvirtualdisplay
+firefox <<< browser agent for selenium
 
 Scraper
 -------------------------------------------------------------------------------
@@ -29,9 +30,16 @@ Database
 -------------------------------------------------------------------------------
 MySQL was the chosen database for this project.
 
+We run 
+	mysql_secure_installation
+to remove any extraneous users, db's, and to get rid of remote logins because they're unnecessary for our purposes.
+
 The database is setup as brand, model, capacity, carrier, item_condition, price, site, timestamp. All fields are varchar with the exception of price which is an integer.
 
 In order to setup a database with a table, use the following commands once logged into the mysql shell.
 	CREATE DATABASE someDatabaseName;
 	USE someDatabaseName;
 	CREATE TABLE someTableName(brand VARCHAR(255), model VARCHAR(255), capacity VARCHAR(255), carrier VARCHAR(255), item_condition VARCHAR(255), price INT(11), site VARCHAR(255), timestamp VARCHAR(255));
+
+Ideally, it's best to create a user in order to avoid using root credentials, and granting that user db permissions as necessary.
+	CREATE USER 'someUserName'@'localhost' IDENTIFIED BY 'somePassword';

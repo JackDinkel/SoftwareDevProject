@@ -9,8 +9,7 @@ Jack Dinkel<br>
 Derek Gorthy<br>
 Michael Swisher
 
-Website:
-52.10.222.171<br>
+Website:<br>
 buybackrevolution.com<br>
 www.buybackrevolution.com
 
