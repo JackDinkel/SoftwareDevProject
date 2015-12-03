@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
     <title>What is your phone worth?</title>
     <script type="text/javascript" src="js/formcalculations.js"></script>
-    <link href="styles/form.css" rel="stylesheet" type="text/css" />
+    <link href="css/form.css" rel="stylesheet" type="text/css" />
 </head>
 <body onload='hideTotal()'>
     <div id="wrap">
@@ -14,6 +14,7 @@
                <fieldset>
                 <legend>Select your phone!</legend>
 
+                <!--
                 <label >Select your phone manufacturer</label>
                 <label class='radiolabel'><input type="radio"  name="manufacturer" value="Samsung" onclick="calculateTotal()" />Samsung</label><br/>
                 <label class='radiolabel'><input type="radio"  name="manufacturer" value="LG" onclick="calculateTotal()" />LG</label><br/>
@@ -21,6 +22,8 @@
                 <label class='radiolabel'><input type="radio"  name="manufacturer" value="Apple" onclick="calculateTotal()" />Apple</label><br/>
 
                 <br/>
+                -->
+
 
                 <label >Select your phone</label>
                 <select id="phone" name='phone' onchange="calculateTotal()">
@@ -102,22 +105,24 @@
                 <br/>
 
                 <label >What is the condition of your screen?</label>
-                <label class='radiolabel'><input type="radio"  name="cracked" value="cracked" onclick="calculateTotal()" />cracked</label><br/>
-                <label class='radiolabel'><input type="radio"  name="scratched" value="scratched" onclick="calculateTotal()" />scratched</label><br/>
-                <label class='radiolabel'><input type="radio"  name="flawless" value="flawless" onclick="calculateTotal()" />flawless</label><br/>
+                <label class='radiolabel'><input type="radio"  name="screen" value="cracked" onclick="calculateTotal()" />cracked</label><br/>
+                <label class='radiolabel'><input type="radio"  name="screen" value="scratched" onclick="calculateTotal()" />scratched</label><br/>
+                <label class='radiolabel'><input type="radio"  name="screen" value="flawless" onclick="calculateTotal()" />flawless</label><br/>
 
                 <br/>
 
+                <!--
                 <label >How many broken buttons does your phone have?</label>
                 <input type="text" id="buttons" name="buttons" onclick="calculateTotal()" /><br/>
+                -->
 
                 <br/>
 
                 <label >What is the condition of your phone's frame</label>
-                <label class='radiolabel'><input type="radio"  name="cracked" value="severely damaged" onclick="calculateTotal()" />cracked</label><br/>
-                <label class='radiolabel'><input type="radio"  name="scratched" value="moderately damaged" onclick="calculateTotal()" />scratched</label><br/>
-                <label class='radiolabel'><input type="radio"  name="scratched" value="slightly damaged" onclick="calculateTotal()" />scratched</label><br/>
-                <label class='radiolabel'><input type="radio"  name="flawless" value="flawless" onclick="calculateTotal()" />flawless</label><br/>
+                <label class='radiolabel'><input type="radio"  name="frame" value="severely" onclick="calculateTotal()" />severely damaged</label><br/>
+                <label class='radiolabel'><input type="radio"  name="frame" value="moderately" onclick="calculateTotal()" />moderately damaged</label><br/>
+                <label class='radiolabel'><input type="radio"  name="frame" value="slightly" onclick="calculateTotal()" />slightly damaged</label><br/>
+                <label class='radiolabel'><input type="radio"  name="frame" value="flawless" onclick="calculateTotal()" />flawless</label><br/>
 
                 <br/>
 
@@ -127,14 +132,17 @@
 
                 <br/>
 
+                <!--
                 <label >How many years old is your phone?</label>
                 <input type="text" id="buttons" name="buttons" onclick="calculateTotal()" /><br/>
+                -->
 
                 <div id="totalPrice" style="display: none;"></div>
                 
                 </fieldset>
             </div>
             
+            <!--
         	<div class="cont_details">
             	<fieldset>
                 <legend>Contact Details</legend>
@@ -146,6 +154,7 @@
                 <br/>
                 </fieldset>
             </div>
+            -->
             <input type='submit' id='submit' value='Submit' onclick="calculateTotal()" />
         </div>  
        </form>

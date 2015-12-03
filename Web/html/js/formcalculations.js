@@ -1,40 +1,4 @@
 /*
-This source is shared under the terms of LGPL 3
-www.gnu.org/licenses/lgpl.html
-
-You are free to use the code in Commercial or non-commercial projects
-*/
-
- //Set up an associative array
- //The keys represent the size of the cake
- //The values represent the cost of the cake i.e A 10" cake cost's $35
- var cake_prices = new Array();
- cake_prices["Round6"]=20;
- cake_prices["Round8"]=25;
- cake_prices["Round10"]=35;
- cake_prices["Round12"]=75;
- 
- //Set up an associative array 
- //The keys represent the filling type
- //The value represents the cost of the filling i.e. Lemon filling is $5,Dobash filling is $9
- //We use this this array when the user selects a filling from the form
- var filling_prices= new Array();
- filling_prices["None"]=0;
- filling_prices["Lemon"]=5;
- filling_prices["Custard"]=5;
- filling_prices["Fudge"]=7;
- filling_prices["Mocha"]=8;
- filling_prices["Raspberry"]=10;
- filling_prices["Pineapple"]=5;
- filling_prices["Dobash"]=9;
- filling_prices["Mint"]=5;
- filling_prices["Cherry"]=5;
- filling_prices["Apricot"]=8;
- filling_prices["Buttercream"]=7;
- filling_prices["Chocolate Mousse"]=12;
- 
-	 
-	 
 // getCakeSizePrice() finds the price based on the size of the cake.
 // Here, we need to take user's the selection from radio button selection
 function getCakeSizePrice()
@@ -158,10 +122,47 @@ var buttonList = ["contract", "used", "insurance", "power", "water", "box"]
  ************************************
  */
 
+var power_list = new Array();
+    power_list["yes"] = 1;
+    power_list["no"] = .25;
+
+var box_list = new Array();
+    box_list["yes"] = 1;
+    box_list["no"] = 1;
 
 var yes_no_list = new Array();
     yes_no_list["yes"] = 1;
     yes_no_list["no"] = 0;
+
+var contract_list = new Array();
+    contract_list["yes"] = 5;
+    contract_list["no"] = 0;
+
+var water_list = new Array();
+    water_list["yes"] = .7;
+    water_list["no"] = 1;
+
+var used_list = new Array();
+    used_list["yes"] = 1;
+    used_list["no"] = 1;
+
+var insurance_list = new Array();
+    insurance["yes"] = 1.5;
+    insurance["no"] = 1;
+
+var frame_list = new Array();
+    frame_list["severely"] = 1;
+    frame_list["moderately"] = 2;
+    frame_list["slightly"] = 3;
+    frame_list["flawless"] = 4;
+
+var screen_list = new Array();
+    screen_list["cracked"] = 1;
+    screen_list["scratched"] = 2;
+    screen_list["flawless"] = 3;
+
+
+var buttonArray = [contract_list, used_list, insurance_list, power_list, water_list, box_list]
 
 function manufacturer()
 {
@@ -258,13 +259,21 @@ function calculateTotal()
      * as updated and accurate as possible.
      */
 
-    var totalprice = manufacturer(); //test line - this will be replaced
+    var totalprice = 1;
 
-    for (var i = 0; i < buttonList.length; i++) //for each different type of button
+    /*for (var i = 0; i < buttonList.length; i++) //for each different type of button
     {
         //multiply the total by the coefficients read from the buttons
-        totalprice *= readbuttons(buttonList[i], yes_no_list)
-    }
+        totalprice *= readbuttons(buttonList[i], buttonArray[i])
+    }*/
+    totalprice *= readbuttons("used",used_list)
+    totalprice *= readbuttons("power",power_list)
+    totalPrice *= readbuttons("water",water_list)
+    totalPrice *= readbuttons("box",box_list)
+    totalPrice *= readbuttons("frame",frame_list)
+    totalprice *= readbuttons("screen",screen_list)
+
+    totalprice += readbuttons("contract",contract_list)
 
     var divobj = document.getElementById('totalPrice'); //grab the totalPrice element
     divobj.style.display='block'; //display the element
