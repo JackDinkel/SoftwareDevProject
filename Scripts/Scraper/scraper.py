@@ -51,12 +51,16 @@ for tag in soup.findAll(''):
 #Gazelle
 ###################################################################
 def scrape_gazelle(reqURL):
+	print "Requesting..."
         browser.get(reqURL)
         htmlSource = browser.page_source
+	print "Got page"
 	scrape_timestamp = timestamp()
         soup = BeautifulSoup(htmlSource, 'html.parser')
+	print "Souping"
         devicePrice = soup.findAll('h3')
         itemPrice = int(devicePrice[5].getText()[1:])
+	print itemPrice
 	siteScrape = urlDecomposition(reqURL)
 	insert_to_db(siteScrape[0],siteScrape[1],siteScrape[2],siteScrape[3],"good",itemPrice,siteScrape[4],scrape_timestamp)
 
@@ -80,6 +84,7 @@ def scrape_usell():
 #URL Sorting
 ###################################################################
 def urlSort(reqURL):
+	print reqURL
 	if "gazelle" in reqURL:
 		#print "zomg %s contains gazelle", reqURL
 		scrape_gazelle(reqURL)
