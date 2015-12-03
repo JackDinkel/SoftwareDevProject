@@ -160,3 +160,15 @@ footer {
         margin: 0 auto;
 }
 
+.footer-logo{
+	max-height: 100px;
+}
+
+.sell-info-icon {
+	max-height: 250px;
+	max-width: 250px;
+}
+
+.company-banner {
+	padding-top: 100px;
+}

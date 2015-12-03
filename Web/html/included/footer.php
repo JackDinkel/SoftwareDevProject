@@ -1,28 +1,21 @@
 	<hr>
         <!-- Footer -->
-     <div class="container">
         <footer>
 		<div class="row">
 
 
-			<div class="col-lg-4">
+			<div class="col-lg-8">
 				<ul>
 					<li><a href="#">Buy</a></li>
 					<li><a href="sell.php">Sell</a></li>
+					<li><a href="about.php">About Us</a></li>
+					<li><a href="contact.php">Contact</a></li>
+					<li><a href="#">Social Media</a></li>
 				</ul>
 			</div>
 
 			<div class="col-lg-4">
-				<ul>
-					<li><a href="about.php">About Us</a></li>
-					<li><a href="contact.php">Contact</a></li>
-				</ul>
-			</div>
-			<div class="col-lg-4">
-				<ul>
-					<li><a href="index.php">Logo</a></li>
-					<li><a href="#">Social Media</a></li>
-				</ul>
+					<a href="index.php"><img class="footer-logo" src="img/logo.gif" /></a>
 			</div>
 		</div>
 		

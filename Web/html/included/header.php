@@ -11,6 +11,7 @@
 
     <title>BuyBack Revolution</title>
 
+    <link rel="icon" type="image/gif" href="../img/logo-favicon.gif" />
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -69,4 +70,4 @@
         </div>
         <!-- /.container -->
     </nav>
-
+    <div class="container">

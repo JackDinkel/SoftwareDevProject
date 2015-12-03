@@ -1,6 +1,5 @@
 <?php include 'included/header.php'; ?>
 	<!-- Page Content -->
-	<div class="container">
 		<div class="row">
 			<h1 class="page-header centerme">
 				What are you Trying to Sell?
@@ -9,12 +8,16 @@
 
 		<div class="row">
                         <div class="col-lg-6">
-				<img class="centerme" src="img/iPhone.jpg">
-				<p class="centerme">iPhone</p>
+				<a href="#">
+					<center><img class="centerme" src="img/iPhone.jpg" /></center>
+					<p class="centerme">iPhone</p>
+				</a>
                         </div>
                         <div class="col-lg-6">
-				<img class="centerme" src="img/Android.jpg">
-				<p class="centerme">Android</p>
+				<a href="#">
+					<center><img src="img/Android.jpg" /></center>
+					<p class="centerme">Android</p>
+				</a>
                         </div>
 		</div>
 
@@ -29,16 +32,19 @@
 				<h3 class="centerme">
 					Answer survey about your device.
 				</h3>
+				<center><img class="sell-info-icon" src="img/survey.png" /></center>
 			</div>
                         <div class="col-lg-4">
 				<h3 class="centerme">
 					Mail it to us.
 				</h3>
+				<center><img class="sell-info-icon" src="img/mail.png" /></center>
                         </div>
                         <div class="col-lg-4">
 				<h3 class="centerme">
 					Get paid.
 				</h3>
+				<center><img class="sell-info-icon" src="img/money.png" /></center>
                         </div>
 		</div>
 
@@ -83,6 +89,4 @@
 		<div class="row">
 			<p>No worries! Fill out this <a href="sellValue.php">survey</a> to see if your device is still eligible to sell.</p>
 		</div>
-	</div>
-	<!-- /.container -->
 <?php include 'included/footer.php'; ?>
