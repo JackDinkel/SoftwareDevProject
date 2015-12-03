@@ -8,13 +8,13 @@
 
 		<div class="row">
                         <div class="col-lg-6">
-				<a href="#">
+				<a href="sellValue.php">
 					<center><img class="centerme" src="img/iPhone.jpg" /></center>
 					<p class="centerme">iPhone</p>
 				</a>
                         </div>
                         <div class="col-lg-6">
-				<a href="#">
+				<a href="sellValue.php">
 					<center><img src="img/Android.jpg" /></center>
 					<p class="centerme">Android</p>
 				</a>

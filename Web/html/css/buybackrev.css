@@ -145,10 +145,14 @@ footer ul li a {
 
 .floatLeft{
         float: left;
+	padding-top: 0px;
+	padding-left: 0px;
 }
 
 .floatRight{
         float: right;
+	padding-top: 0px;
+	padding-right: 0px;
 }
 
 .sectionTop{

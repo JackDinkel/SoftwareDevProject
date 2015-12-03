@@ -2,10 +2,8 @@
         <!-- Footer -->
         <footer>
 		<div class="row">
-
-
 			<div class="col-lg-8">
-				<ul>
+				<ul class="floatLeft">
 					<li><a href="buy.php">Buy</a></li>
 					<li><a href="sell.php">Sell</a></li>
 					<li><a href="about.php">About Us</a></li>
@@ -15,7 +13,7 @@
 			</div>
 
 			<div class="col-lg-4">
-					<a href="index.php"><img class="footer-logo" src="img/logo.gif" /></a>
+					<a href="index.php" class="floatRight"><img class="footer-logo" src="img/logo.gif" /></a>
 			</div>
 		</div>
 		
