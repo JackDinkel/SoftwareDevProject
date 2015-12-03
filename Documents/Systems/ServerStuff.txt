@@ -4,3 +4,5 @@ First, download the repo to your home folder or wherever you want to save the re
 After we need to create a symbolic link that refers to the directory containing all of the webcontent. This can be done by creating a symbolic link that essentially points to the web content as if it was within the /var/www. The link is created by running the following command:
 	sudo ln -S <path to web directory> html
 The previous command makes the link with the name "html." The name doesn't have to be html, but if a name aside from html is used, the web server needs to be configured to have its root document set to whatever the path+symlink name is in order to properly serve the web content.
+
+Ports 80/443 (or w/e port is configured for outbound HTTP/HTTPS traffic) must NOT be blocked or else the scraper will most likely fail.
