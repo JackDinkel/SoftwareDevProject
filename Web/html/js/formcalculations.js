@@ -266,14 +266,14 @@ function calculateTotal()
         //multiply the total by the coefficients read from the buttons
         totalprice *= readbuttons(buttonList[i], buttonArray[i])
     }*/
-    totalprice *= readbuttons("used",used_list)
+    /*totalprice *= readbuttons("used",used_list)
     totalprice *= readbuttons("power",power_list)
     totalPrice *= readbuttons("water",water_list)
     totalPrice *= readbuttons("box",box_list)
     totalPrice *= readbuttons("frame",frame_list)
     totalprice *= readbuttons("screen",screen_list)
 
-    totalprice += readbuttons("contract",contract_list)
+    totalprice += readbuttons("contract",contract_list)*/
 
     var divobj = document.getElementById('totalPrice'); //grab the totalPrice element
     divobj.style.display='block'; //display the element
