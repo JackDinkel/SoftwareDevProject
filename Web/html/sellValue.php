@@ -59,9 +59,9 @@
 
 					<label>What is the condition of your phone's frame</label>
 					<br/>
-					<label class='radiolabel'><input type="radio"  name="cracked" value="severely damaged" onclick="calculateTotal()">cracked</label><br/>
-					<label class='radiolabel'><input type="radio"  name="scratched" value="slightly damaged" onclick="calculateTotal()">scratched</label><br/>
-					<label class='radiolabel'><input type="radio"  name="flawless" value="flawless" onclick="calculateTotal()">flawless</label><br/>
+					<label class='radiolabel'><input type="radio"  name="frame" value="severely damaged" onclick="calculateTotal()">cracked</label><br/>
+					<label class='radiolabel'><input type="radio"  name="frame" value="slightly damaged" onclick="calculateTotal()">scratched</label><br/>
+					<label class='radiolabel'><input type="radio"  name="frame" value="flawless" onclick="calculateTotal()">flawless</label><br/>
 
 					<br/>
 
