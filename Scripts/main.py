@@ -411,7 +411,7 @@ def phpscript(phone):
 
 	cur.execute("SELECT price FROM selling WHERE model='iphone-6s-plus' AND capacity='iphone-6s-plus-16gb-at-t' AND carrier='at-t'")
 
-	price = cur.fetchall()[0]
+	price = cur.fetchall()[0][0]
 
 	print price
 
