@@ -413,4 +413,4 @@ def phpscript(phone):
 
 
 if __name__ == '__main__':
-	main()
+	phpscript("hi")
