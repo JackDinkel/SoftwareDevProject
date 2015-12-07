@@ -8,7 +8,7 @@
 					<li><a href="sell.php">Sell</a></li>
 					<li><a href="about.php">About Us</a></li>
 					<li><a href="contact.php">Contact</a></li>
-					<li><a href="#">Social Media</a></li>
+					<li><a href="legal.php">Legal</a></li>
 				</ul>
 			</div>
 
