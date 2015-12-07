@@ -409,7 +409,10 @@ def phpscript(phone):
 	#create a curser so we can query the db
 	cur = db.cursor()
 
-	print cur.execute("SELECT price FROM selling WHERE model='iphone-6s-plus' AND capacity='iphone-6s-plus-16gb-at-t' AND carrier='at-t'")
+	cur.execute("SELECT price FROM selling WHERE model='iphone-6s-plus' AND capacity='iphone-6s-plus-16gb-at-t' AND carrier='at-t'")
+
+	for row in cur.fetchall():
+		print row[0]
 
 
 if __name__ == '__main__':
