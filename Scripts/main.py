@@ -1,5 +1,6 @@
 import sys
 import pydoc
+import MySQLdb
 
 '''
 This is the main file for the python test script
@@ -399,6 +400,17 @@ def main():
 
 
 	print "Your phone is worth $%s" % round(phoneWorth, 2)
+
+
+def phpscript(phone):
+	#connect to the database
+	db = MySQLdb.connect(host="localhost",user="pythonScraper",passwd="YouThinkThisIsAGame",db="bbr")
+
+	#create a curser so we can query the db
+	cur = db.cursor()
+
+	print cur.execute("SELECT iphone-6s-plus FROM selling WHERE capacity=iphone-6s-plus-16gb-at-t and carrier=at-t")
+
 
 if __name__ == '__main__':
 	main()
