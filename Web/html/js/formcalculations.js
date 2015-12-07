@@ -259,7 +259,7 @@ function calculateTotal()
      * as updated and accurate as possible.
      */
 
-    var totalprice = 1;
+    var totalprice = 360;
 
     /*for (var i = 0; i < buttonList.length; i++) //for each different type of button
     {
