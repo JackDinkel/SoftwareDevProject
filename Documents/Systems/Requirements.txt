@@ -1,13 +1,17 @@
 Development is currently on LAMP stack
+get pip installer from https://bootstrap.pypa.io/get-pip.py
 On Ubuntu, make sure the following is installed if using pip
 libffi-dev libssl-dev python-dev
+git <<< VCS
 -------------------------------------------------------------------------------
 Python 2.7
 Python:
-	requests
+	requests <<< upgrade this
 	beautifulsoup4 <<< html parser
 	selenium <<< loads webpages in web browser agent to allow script execution
 	pyvirtualdisplay <<< needed to run headless mode
+	pyopenssl ndg-httpsclient pyasn1
+
 python-mysqldb <<< python module to interface with mysql db's
 xvfb <<< for pyvirtualdisplay
 firefox <<< browser agent for selenium
