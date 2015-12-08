@@ -16,6 +16,10 @@ Michael Swisher
 buybackrevolution.com
 
 
+####Final Submission:
+The final submission for this project is located in Documents/Reports/BuyBackRevolution_Part6.pdf
+
+
 ####Repository Structure:
 This repository is split into three sections, Documents, Scripts, and Web.
 
