@@ -45,32 +45,32 @@
             </div>
             <div class="col-md-4 col-sm-6">
                 <a href="#">
-                    <img class="img-responsive img-portfolio img-hover" src="img/note5banner.jpg" alt="">
+                    <img class="img-responsive img-portfolio img-hover" src="img/note5banner.jpg" height="150px" width="320px" alt="">
                 </a>
             </div>
             <div class="col-md-4 col-sm-6">
                 <a href="#">
-                    <img class="img-responsive img-portfolio img-hover" src="img/samsungs6edge.jpg" alt="">
+                    <img class="img-responsive img-portfolio img-hover" src="img/samsungs6edge.jpg" height="150px" width="320px" alt="">
                 </a>
             </div>
             <div class="col-md-4 col-sm-6">
                 <a href="#">
-                    <img class="img-responsive img-portfolio img-hover" src="img/lgg4banner.jpg" alt="">
+                    <img class="img-responsive img-portfolio img-hover" src="img/lgg4banner.jpg" height="150px" width="320px" alt="">
                 </a>
             </div>
             <div class="col-md-4 col-sm-6">
                 <a href="#">
-                    <img class="img-responsive img-portfolio img-hover" src="img/iphone4sbanner.jpg" alt="">
+                    <img class="img-responsive img-portfolio img-hover" src="img/iphone4sbanner.jpg" height="150px" width="320px" alt="">
                 </a>
             </div>
             <div class="col-md-4 col-sm-6">
                 <a href="#">
-                    <img class="img-responsive img-portfolio img-hover" src="img/iphone6srosegoldbanner.jpg" alt="">
+                    <img class="img-responsive img-portfolio img-hover" src="img/iphone6srosegoldbanner.jpg" height="150px" width="320px" alt="">
                 </a>
             </div>
             <div class="col-md-4 col-sm-6">
                 <a href="#">
-                    <img class="img-responsive img-portfolio img-hover" src="img/windowsphone10banner.jpg" alt="">
+                    <img class="img-responsive img-portfolio img-hover" src="img/windowsphone10banner.jpg" height="150px" width="320px" alt="">
                 </a>
             </div>
         </div>
