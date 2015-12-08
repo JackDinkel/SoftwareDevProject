@@ -73,7 +73,7 @@
 					<br/>
 
 					<label>How many years old is your phone?</label>
-					<input type="text" id="buttons" name="buttons" onclick="calculateTotal()" /><br/>
+					<input type="text" id="age" name="age" onclick="calculateTotal()" /><br/>
 
 					<div id="totalPrice" style="display: none;"></div>
 				</fieldset>
@@ -81,6 +81,7 @@
 			</div> / 
 		</form>
 	<script type="text/javascript" src="js/formcalculations.js"></script>
+	<?php echo "your phone is worth $360.00"; ?>
 	<?php echo "print technique 1:<br> ", $_GET['phone'] . ' ' .  $_GET['carrier'], "<br><br>"; ?>
 	<?php echo "print technique 2:<br>"; foreach($_GET as $key => $value) { echo $key . ': ' . $value . "<br>"; } ?>
 <?php include 'included/footer.php'; ?>
