@@ -78,10 +78,10 @@
 					<div id="totalPrice" style="display: none;"></div>
 				</fieldset>
 			    <input type='submit' id='submit' value='Submit' onclick="calculateTotal()">
-			</div> / 
+			</div>  
 		</form>
 	<script type="text/javascript" src="js/formcalculations.js"></script>
-	<?php echo "Your phone is worth $360.00"; ?>
-	<?php echo "print technique 1:<br> ", $_GET['phone'] . ' ' .  $_GET['carrier'], "<br><br>"; ?>
+	<!--<?php echo "print technique 1:<br> ", $_GET['phone'] . ' ' .  $_GET['carrier'], "<br><br>"; ?>-->
 	<?php foreach($_GET as $key => $value) { echo $key . ': ' . $value . "<br>"; } ?>
+	<?php echo "Your phone is worth $360.00"; ?>
 <?php include 'included/footer.php'; ?>
