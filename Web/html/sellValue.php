@@ -73,7 +73,7 @@
 					<br/>
 
 					<label>How many years old is your phone?</label>
-					<input type="text" id="buttons" name="buttons" onclick="calculateTotal()" /><br/>
+					<input type="text" id="old" name="old" onclick="calculateTotal()" /><br/>
 
 					<div id="totalPrice" style="display: none;"></div>
 				</fieldset>

@@ -81,7 +81,7 @@
 			</div> / 
 		</form>
 	<script type="text/javascript" src="js/formcalculations.js"></script>
+	<!--<?php echo "print technique 1:<br> ", $_GET['phone'] . ' ' .  $_GET['carrier'], "<br><br>"; ?> -->
+	<?php echo foreach($_GET as $key => $value) { echo $key . ': ' . $value . "<br>"; } ?>
 	<?php echo "Your phone is worth $360.00"; ?>
-	<?php echo "print technique 1:<br> ", $_GET['phone'] . ' ' .  $_GET['carrier'], "<br><br>"; ?>
-	<?php echo "print technique 2:<br>"; foreach($_GET as $key => $value) { echo $key . ': ' . $value . "<br>"; } ?>
 <?php include 'included/footer.php'; ?>
