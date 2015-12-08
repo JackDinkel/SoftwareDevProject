@@ -277,6 +277,6 @@ function calculateTotal()
 
     var divobj = document.getElementById('totalPrice'); //grab the totalPrice element
     divobj.style.display='block'; //display the element
-    divobj.innerHTML = "Total Price For the Cake $" + totalprice; // set the text for the element
+    divobj.innerHTML = "Your phone is worth $" + totalprice; // set the text for the element
 }
 
