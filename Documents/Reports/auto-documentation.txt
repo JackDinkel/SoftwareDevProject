@@ -1,0 +1,127 @@
+Help on module main:
+
+NAME
+    main
+
+FILE
+    /data/Documents/School/Software_Dev/SoftwareDevProject/Scripts/main.py
+
+FUNCTIONS
+    birds(i=0)
+        Asks the user if their phone has the Angry Birds app installed
+        Takes user input using the terminal and parses it.
+        
+        Returns True if it is installed and False if it is not.
+    
+    box(i=0)
+        Asks the user whether they have the original box for their phone.
+        Takes user input using the terminal and parses it.
+        
+        Returns True if they have the box, False if they don't.
+    
+    build_carrierDic()
+        Builds the carrier dictionary, stored in the variable carrierDic.
+        This function reads in the file "carrier" and parses
+        it. It then stores the data in the file into the dictionary.
+        
+        THIS FUNCTION IS DEPRECATED AND SHOULD BE HANDLED BY A DATABASE
+    
+    build_phoneDic()
+        Builds the phone dictionary, stored in the variable phoneDic.
+        This function reads in the file "phone_dictionary" and parses
+        it. It then stores the data in the file into the dictionary.
+        
+        THIS FUNCTION IS DEPRECATED AND SHOULD BE HANDLED BY A DATABASE
+    
+    buttons(i=0)
+        Asks the user how many broken buttons their phone has.
+        Takes user input using the terminal and parses it.
+        
+        Returns the number of broken buttons.
+    
+    condition(i=0)
+        Asks the user whether their phone is used.
+        Takes user input using the terminal and parses it.
+        
+        Returns True if the phone is used, False if it is not.
+    
+    contract(i=0)
+        Asks the user if their phone is under contract.
+        Takes user input using the terminal and parses it.
+        
+        Exits the program if the phone is under contract.
+        Returns nothing.
+    
+    findCarrier(carrierList, i=0)
+        Uses carriers in carrierDic to ask the user which carrier they have.
+        Takes user input using the terminal and parses it.
+        
+        Takes the list of carriers(carrierDic.keys()) as input.
+        Returns the user's carrier.
+    
+    findPhone(phoneList, i=0)
+        Uses phones in phoneDic to ask the user which phone they have.
+        Takes user input using the terminal and parses it.
+        
+        Takes the list of phones(phoneDic.keys()) as input.
+        Returns the user's phone.
+    
+    frame(i=0)
+        Asks the user to rate the condition of their frame
+                4: flawless
+                3: slightly damaged
+                2: moderately damaged
+                1: severely damaged
+        Takes user input using the terminal and parses it.
+        
+        Returns the number 1, 2, 3, or 4.
+    
+    insurance(i=0)
+        Asks the user if their phone is covered by insurance.
+        Takes user input using the terminal and parses it.
+        
+        Returns True if it is, and False if it is not.
+    
+    main()
+        This is the main function for the python test script
+        
+        This program is designed to take user input and
+        calculate how much their phone is worth. At the very
+        end, it spits out a price.
+        
+        It works by calling several different functions which
+        all ask different questions.
+        It then calculates the final price.
+    
+    old(i=0)
+        Asks the user how many months they have had their phone.
+        Takes user input using the terminal and parses it.
+        
+        Returns the number of years as an integer
+    
+    phpscript(phone)
+        This function connects the script to the website source files
+        and allows the website to access the database
+    
+    power(i=0)
+        Asks the user whether their phone can power on.
+        Takes user input using the terminal and parses it.
+        
+        Returns True if it can or False if it can't.
+    
+    screenDamage(i=0)
+        Asks the user to rate the condition of their screen from 1-3
+                3: flawless
+                2: scratched
+                1: cracked
+        Takes user input using the terminal and parses it.
+        
+        Returns the number 1, 2, or 3.
+    
+    waterDamage(i=0)
+        Asks the user if their phone has water damage.
+        Takes user input using the terminal and parses it.
+        
+        Returns True if it is damaged and False if it is not.
+
+

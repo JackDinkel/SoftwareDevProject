@@ -1,6 +1,6 @@
 import sys
 import pydoc
-import MySQLdb
+#import MySQLdb
 
 '''
 This is the main file for the python test script
@@ -403,6 +403,10 @@ def main():
 
 
 def phpscript(phone):
+	'''
+	This function connects the script to the website source files
+	and allows the website to access the database
+	'''
 	#connect to the database
 	db = MySQLdb.connect(host="localhost",user="pythonScraper",passwd="YouThinkThisIsAGame",db="bbr")
 
